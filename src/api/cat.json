@@ -1,23 +1,23 @@
 [
   {
-    "@type": "Page",
+    "type": "Page",
     "children": [
       {
-        "@type": "Radio",
+        "type": "Radio",
         "text": "Hva er yndlingsfargen din?",
         "suggestedAnswer": [
           {
-            "@type": "Answer",
+            "type": "Answer",
             "text": "Brun",
             "value": "brun"
           },
           {
-            "@type": "Answer",
+            "type": "Answer",
             "text": "Svart",
             "value": "svart"
           },
           {
-            "@type": "Answer",
+            "type": "Answer",
             "text": "Hvit",
             "value": "hvit"
           }
@@ -26,29 +26,29 @@
     ]
   },
   {
-    "@type": "Page",
+    "type": "Page",
     "children": [
       {
-        "@type": "Checkbox",
+        "type": "Checkbox",
         "text": "Trenger du en katt som kan fange ekle dyr  i huset ditt?",
         "suggestedAnswer": [
           {
-            "@type": "Answer",
+            "type": "Answer",
             "text": "Edderkopp",
             "value": "edderkopp"
           },
           {
-            "@type": "Answer",
+            "type": "Answer",
             "text": "Mus",
             "value": "mus"
           },
           {
-            "@type": "Answer",
+            "type": "Answer",
             "text": "Fluer",
             "value": "fluer"
           },
           {
-            "@type": "Answer",
+            "type": "Answer",
             "text": "Rotter",
             "value": "rotter"
           }
