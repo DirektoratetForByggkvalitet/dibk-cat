@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import { Wizard } from 'dibk-wizard-framework'
+import React, { Component } from "react";
+import { Wizard } from "dibk-wizard-framework";
 
-import config from './config'
+import cat from "./api/cat";
 
 class App extends Component {
   render() {
-    return <Wizard />
+    return <Wizard schema={cat} />;
   }
 }
 

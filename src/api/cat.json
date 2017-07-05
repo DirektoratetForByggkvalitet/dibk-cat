@@ -42,11 +42,15 @@
             "text": "Mus",
             "value": "mus"
           },
-
           {
             "@type": "Answer",
-            "text": "Hvit",
-            "value": "hvit"
+            "text": "Fluer",
+            "value": "fluer"
+          },
+          {
+            "@type": "Answer",
+            "text": "Rotter",
+            "value": "rotter"
           }
         ]
       }
