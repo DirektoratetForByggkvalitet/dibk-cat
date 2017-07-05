@@ -1,8 +1,9 @@
-[
+export default [
   {
     "type": "Page",
     "children": [
       {
+        "property": "preferences.color",
         "type": "Radio",
         "text": "Hva er yndlingsfargen din?",
         "suggestedAnswer": [
@@ -29,6 +30,7 @@
     "type": "Page",
     "children": [
       {
+        "property": "preferences.predator",
         "type": "Checkbox",
         "text": "Trenger du en katt som kan fange ekle dyr  i huset ditt?",
         "suggestedAnswer": [
