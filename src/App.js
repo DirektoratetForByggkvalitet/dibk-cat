@@ -34,14 +34,7 @@ injectGlobal`
 export default function App() {
   return (
     <Provider store={store}>
-      <Wizard
-        schema={cat}
-        styles={{
-          color: {
-            primary: 'deeppink',
-          },
-        }}
-      />
+      <Wizard schema={cat} />
     </Provider>
   );
 }
