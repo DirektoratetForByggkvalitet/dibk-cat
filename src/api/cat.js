@@ -176,6 +176,7 @@ export default [
         property: 'living.animals',
         type: 'Number',
         text: 'Hvor mange timer er du borte fra hjemmet hver dag?',
+        placeholder: 'Timer',
       },
       {
         property: 'preferences.color',
