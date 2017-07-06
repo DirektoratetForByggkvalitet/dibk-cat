@@ -14,7 +14,7 @@
     "start": "PORT=8080 react-scripts start",
     "build": "react-scripts build",
     "test": "yarn run lint:js && react-scripts test --env=jsdom",
-    "lint:js": "eslint . --ext .jsx,.js",
+    "lint:js": "eslint . --ext .jsx,.js --ignore-pattern build",
     "eject": "react-scripts eject",
     "deploy": "yarn run build && firebase deploy"
   },
