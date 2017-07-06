@@ -170,7 +170,7 @@ export default [
         ],
       },
       {
-        property: 'living.animals',
+        property: 'living.gone',
         type: 'Number',
         heading: 'Hvor mange timer er du borte fra hjemmet hver dag?',
         placeholder: 'Timer',
