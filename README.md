@@ -14,7 +14,7 @@ The project is hosted on [`Firebase`](https://console.firebase.google.com/u/0/pr
 To deploy you need the firebase tools.
 Install it with the following command:
 
-`npm install -g firebase-tools`
+`yarn global add firebase-tools`
 
 Follow the instructions for:
 `firebase login`
