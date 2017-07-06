@@ -1,11 +1,13 @@
 export default [
   {
     type: 'Page',
+    title: 'Forhold til katter',
     children: [
       {
         property: 'preferences.love',
         type: 'Radio',
-        text: 'Er du glad i katter?',
+        heading: 'Er du glad i katter?',
+        text: 'På en skala fra ja til nei, er du glad i katter?',
         suggestedAnswer: [
           {
             type: 'Answer',
