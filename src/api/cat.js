@@ -53,13 +53,88 @@ export default [
       },
       {
         property: 'living.floor',
-        type: 'SelectNumber',
+        type: 'Select',
         text: 'I hvilken etasje bor du?',
         suggestedAnswer: [
           {
             type: 'Answer',
-            minimum: 1,
-            maximum: 15,
+            text: 1,
+            value: 1,
+          },
+          {
+            type: 'Answer',
+            text: 2,
+            value: 2,
+          },
+          {
+            type: 'Answer',
+            text: 3,
+            value: 3,
+          },
+          {
+            type: 'Answer',
+            text: 3,
+            value: 3,
+          },
+          {
+            type: 'Answer',
+            text: 4,
+            value: 4,
+          },
+          {
+            type: 'Answer',
+            text: 5,
+            value: 5,
+          },
+          {
+            type: 'Answer',
+            text: 6,
+            value: 6,
+          },
+          {
+            type: 'Answer',
+            text: 7,
+            value: 7,
+          },
+          {
+            type: 'Answer',
+            text: 8,
+            value: 8,
+          },
+          {
+            type: 'Answer',
+            text: 9,
+            value: 9,
+          },
+          {
+            type: 'Answer',
+            text: 10,
+            value: 10,
+          },
+          {
+            type: 'Answer',
+            text: 11,
+            value: 11,
+          },
+          {
+            type: 'Answer',
+            text: 12,
+            value: 12,
+          },
+          {
+            type: 'Answer',
+            text: 13,
+            value: 13,
+          },
+          {
+            type: 'Answer',
+            text: 14,
+            value: 14,
+          },
+          {
+            type: 'Answer',
+            text: 15,
+            value: 15,
           },
         ],
       },
