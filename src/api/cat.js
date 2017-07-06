@@ -1,7 +1,7 @@
 export default [
   {
     type: 'Page',
-    title: 'Forhold til katter',
+    heading: 'Forhold til katter',
     children: [
       {
         property: 'preferences.love',
@@ -24,7 +24,7 @@ export default [
       {
         property: 'living.type',
         type: 'Radio',
-        text: 'Hvor bor du?',
+        heading: 'Hvor bor du?',
         suggestedAnswer: [
           {
             type: 'Answer',
@@ -56,7 +56,7 @@ export default [
       {
         property: 'living.floor',
         type: 'Select',
-        text: 'I hvilken etasje bor du?',
+        heading: 'I hvilken etasje bor du?',
         suggestedAnswer: [
           {
             type: 'Answer',
@@ -138,7 +138,7 @@ export default [
       {
         property: 'living.contract',
         type: 'Radio',
-        text: 'Er dyrehold regulert av kontrakten din?',
+        heading: 'Er dyrehold regulert av kontrakten din?',
         suggestedAnswer: [
           {
             type: 'Answer',
@@ -155,7 +155,7 @@ export default [
       {
         property: 'living.animals',
         type: 'Radio',
-        text: 'Har du lov til å ha katt?',
+        heading: 'Har du lov til å ha katt?',
         suggestedAnswer: [
           {
             type: 'Answer',
@@ -172,7 +172,7 @@ export default [
       {
         property: 'living.animals',
         type: 'Number',
-        text: 'Hvor mange timer er du borte fra hjemmet hver dag?',
+        heading: 'Hvor mange timer er du borte fra hjemmet hver dag?',
         placeholder: 'Timer',
         minimum: 0,
         maximum: 24,
@@ -181,7 +181,7 @@ export default [
       {
         property: 'preferences.color',
         type: 'Radio',
-        text: 'Hva er yndlingsfargen din?',
+        heading: 'Hva er yndlingsfargen din?',
         suggestedAnswer: [
           {
             type: 'Answer',
@@ -204,12 +204,12 @@ export default [
   },
   {
     type: 'Page',
-    title: 'Kattens egenskaper',
+    heading: 'Kattens egenskaper',
     children: [
       {
         property: 'preferences.predator',
         type: 'Checkbox',
-        text: 'Trenger du en katt som kan fange ekle dyr  i huset ditt?',
+        heading: 'Trenger du en katt som kan fange ekle dyr  i huset ditt?',
         suggestedAnswer: [
           {
             type: 'Answer',
