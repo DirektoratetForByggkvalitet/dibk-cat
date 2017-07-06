@@ -177,6 +177,8 @@ export default [
         type: 'Number',
         text: 'Hvor mange timer er du borte fra hjemmet hver dag?',
         placeholder: 'Timer',
+        minumum: 0,
+        maximum: 24,
       },
       {
         property: 'preferences.color',
