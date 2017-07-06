@@ -139,6 +139,45 @@ export default [
         ],
       },
       {
+        property: 'living.contract',
+        type: 'Radio',
+        text: 'Er dyrehold regulert av kontrakten din?',
+        suggestedAnswer: [
+          {
+            type: 'Answer',
+            text: 'Ja',
+            value: 'ja',
+          },
+          {
+            type: 'Answer',
+            text: 'Nei',
+            value: 'nei',
+          },
+        ],
+      },
+      {
+        property: 'living.animals',
+        type: 'Radio',
+        text: 'Har du lov til å ha katt?',
+        suggestedAnswer: [
+          {
+            type: 'Answer',
+            text: 'Ja',
+            value: 'ja',
+          },
+          {
+            type: 'Answer',
+            text: 'Nei',
+            value: 'nei',
+          },
+        ],
+      },
+      {
+        property: 'living.animals',
+        type: 'Number',
+        text: 'Hvor mange timer er du borte fra hjemmet hver dag?',
+      },
+      {
         property: 'preferences.color',
         type: 'Radio',
         text: 'Hva er yndlingsfargen din?',
