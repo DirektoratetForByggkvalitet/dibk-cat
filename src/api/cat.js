@@ -204,6 +204,7 @@ export default [
   },
   {
     type: 'Page',
+    title: 'Kattens egenskaper',
     children: [
       {
         property: 'preferences.predator',
