@@ -210,7 +210,7 @@ export default [
         ],
         branchFalsy: [
           {
-            type: 'Page',
+            type: 'Result',
             title: 'Du kan ikke ha katt 😿',
           },
         ],
@@ -224,7 +224,7 @@ export default [
       {
         property: 'preferences.predator',
         type: 'Checkbox',
-        heading: 'Trenger du en katt som kan fange ekle dyr  i huset ditt?',
+        heading: 'Trenger du en katt som kan fange ekle dyr i huset ditt?',
         suggestedAnswer: [
           {
             type: 'Answer',
@@ -251,6 +251,7 @@ export default [
     ],
   },
   {
+    type: 'Result',
     title: 'Hurra - du kan ha katt 🌈',
   },
 ];
