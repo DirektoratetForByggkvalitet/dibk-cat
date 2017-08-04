@@ -1,7 +1,7 @@
 export default [
   {
     type: 'Page',
-    heading: 'Forhold til katter',
+    title: 'Forhold til katter',
     children: [
       {
         property: 'preferences.love',
@@ -226,7 +226,7 @@ export default [
   },
   {
     type: 'Page',
-    heading: 'Kattens egenskaper',
+    title: 'Kattens egenskaper',
     children: [
       {
         property: 'preferences.predator',
