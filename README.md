@@ -1,5 +1,7 @@
 # [dibk-cat](https://dibk-cat.firebaseapp.com/)
 
+We made an Invision prototype that can be found here https://projects.invisionapp.com/share/EGCVNJU9T
+
 ## Development
 
 You need to link the netliferesearch/dibk-wizard-framework to run this project locally. Head over to you clone of that repo in the terminal and type `yarn link`.
