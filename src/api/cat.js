@@ -1,6 +1,7 @@
 export default {
   meta: {
     title: 'Veiviser: Hvor skal tittelen på veiviseren stå?',
+    footer: 'Your footer here!',
   },
   schema: [
     {

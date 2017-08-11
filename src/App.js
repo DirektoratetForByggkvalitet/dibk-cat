@@ -38,7 +38,7 @@ export default class App extends Component {
     if (!this.state.loading) {
       return (
         <Provider store={store}>
-          <Wizard schema={cat} />
+          <Wizard wizard={cat} />
         </Provider>
       );
     }
