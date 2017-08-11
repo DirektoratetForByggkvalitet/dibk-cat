@@ -5,6 +5,7 @@ export default {
   },
   schema: [
     {
+      id: 'relation',
       type: 'Page',
       title: 'Forhold til katter',
       lead: 'This is a lead for the page',
@@ -223,6 +224,7 @@ export default {
               test: ({ preferences = {} }) => preferences.love !== 'ja',
               children: [
                 {
+                  id: 'nocat',
                   type: 'Result',
                   title: 'Du kan ikke ha katt 😿',
                 },
@@ -233,6 +235,7 @@ export default {
       ],
     },
     {
+      id: 'features',
       type: 'Page',
       title: 'Kattens egenskaper',
       lead: 'This is a lead for the page',
@@ -267,6 +270,7 @@ export default {
       ],
     },
     {
+      id: 'hooray',
       type: 'Result',
       title: 'Hurra - du kan ha katt 🌈',
       lead: 'This is a lead for the page',
