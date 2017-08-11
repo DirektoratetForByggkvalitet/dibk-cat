@@ -2,6 +2,7 @@ export default [
   {
     type: 'Page',
     title: 'Forhold til katter',
+    lead: 'This is a lead for the page',
     children: [
       {
         property: 'preferences.love',
@@ -63,7 +64,8 @@ export default [
                 property: 'living.floor',
                 type: 'Select',
                 heading: 'I hvilken etasje bor du?',
-                hidden: ({ living = {} }) => !living.type || ['enebolig', 'rekkehus', 'annet'].indexOf(living.type) > -1,
+                hidden: ({ living = {} }) =>
+                  !living.type || ['enebolig', 'rekkehus', 'annet'].indexOf(living.type) > -1,
                 suggestedAnswer: [
                   {
                     type: 'Answer',
@@ -146,7 +148,8 @@ export default [
                 property: 'living.contract',
                 type: 'Radio',
                 heading: 'Er dyrehold regulert av kontrakten din?',
-                hidden: ({ living = {} }) => !living.type || ['enebolig', 'annet'].indexOf(living.type) > -1,
+                hidden: ({ living = {} }) =>
+                  !living.type || ['enebolig', 'annet'].indexOf(living.type) > -1,
                 suggestedAnswer: [
                   {
                     type: 'Answer',
@@ -227,6 +230,7 @@ export default [
   {
     type: 'Page',
     title: 'Kattens egenskaper',
+    lead: 'This is a lead for the page',
     children: [
       {
         property: 'preferences.predator',
@@ -260,5 +264,6 @@ export default [
   {
     type: 'Result',
     title: 'Hurra - du kan ha katt 🌈',
+    lead: 'This is a lead for the page',
   },
 ];

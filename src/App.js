@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 
 import { Wizard } from 'dibk-wizard-framework';
 import store from './store';
+import cat from './api/cat';
 
 export default class App extends Component {
   constructor(props) {
@@ -37,7 +38,7 @@ export default class App extends Component {
     if (!this.state.loading) {
       return (
         <Provider store={store}>
-          <Wizard schema={this.state.json} />
+          <Wizard schema={cat} />
         </Provider>
       );
     }
