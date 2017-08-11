@@ -15,7 +15,7 @@ export default class App extends Component {
   }
   componentDidMount() {
     /* eslint-disable */
-    fetch('https://oracle-ea1f3.firebaseio.com/trees/-KqweqqKlwN3_3CRlbct.json')
+    fetch('https://oracle-ea1f3.firebaseio.com/trees/-KqweqqKlwN3_3CRlbct/dibk.json')
       /* eslint-enable */
       .then((response) => {
         const contentType = response.headers.get('content-type');
