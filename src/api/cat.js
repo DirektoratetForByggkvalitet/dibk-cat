@@ -270,6 +270,39 @@ export default {
       ],
     },
     {
+      id: 'testtypes',
+      type: 'Page',
+      title: 'Denne siden er for å teste alle de nye sidene',
+      lead: 'Ja denne siden har bare de nye typene vi trenger',
+      children: [
+        {
+          property: 'favourite.actor',
+          type: 'input',
+          heading: 'Skrive navnet på favoritt skuespilleren?',
+          placeholder: 'Kit Harington',
+        },
+        {
+          property: 'behavior.with.animals',
+          type: 'textarea',
+          heading: 'Skriv litt om hvordan du er med dyr?',
+          placeholder: 'Hvordan oppfører du deg rundt dyr',
+        },
+        {
+          property: 'cat.information',
+          type: 'text',
+          heading: 'Dette er en informasjonsblokk?',
+          body:
+            "Cat ipsum dolor sit amet, always hungry man running from cops stops to pet cats, goes to jail step on your keyboard while you're gaming and then turn in a circle . Pose purrfectly to show my beauty woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now but lick plastic bags destroy couch, yet hunt by meowing loudly at 5am next to human slave food dispenser. Sleep nap meow meow or put toy mouse in food bowl run out of litter box at full speed but meow all night and hunt anything that moves. My left donut is missing, as is my right. Rub whiskers on bare skin act innocent shove bum in owner's face like camera lens but munch on tasty moths meow for meow all night. Need to chase tail massacre a bird in the living room and then look like the cutest and most innocent animal on the planet. ",
+        },
+        {
+          property: 'cat.image',
+          type: 'image',
+          text: 'Dette er en informasjonsblokk?',
+          url: 'https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif',
+        },
+      ],
+    },
+    {
       id: 'hooray',
       type: 'Result',
       title: 'Hurra - du kan ha katt 🌈',
