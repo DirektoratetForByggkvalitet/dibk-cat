@@ -3,45 +3,32 @@ import { Provider } from 'react-redux';
 
 import { Wizard } from 'dibk-wizard-framework';
 import store from './store';
-// import cat from './api/cat';
+import cat from './api/cat';
+import Intro from './pages/Intro';
 
 export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      loading: true,
-      json: '',
+      intro: true,
     };
+    this.closeIntro = this.closeIntro.bind(this);
   }
-  componentDidMount() {
-    /* eslint-disable */
-    fetch('https://oracle-ea1f3.firebaseio.com/trees/-KqweqqKlwN3_3CRlbct/dibk.json')
-      /* eslint-enable */
-      .then((response) => {
-        const contentType = response.headers.get('content-type');
-        if (contentType && contentType.includes('application/json')) {
-          return response.json();
-        }
-        throw new TypeError("Oops, we haven't got JSON!");
-      })
-      .then((json) => {
-        this.setState({
-          loading: false,
-          json,
-        });
-      })
-      .catch((error) => {
-        console.log(error); /* eslint no-console: 0*/
-      });
+
+  closeIntro() {
+    this.setState({
+      intro: false,
+    });
   }
+
   render() {
-    if (!this.state.loading) {
-      return (
-        <Provider store={store}>
-          <Wizard wizard={this.state.json} />
-        </Provider>
-      );
+    if (this.state.intro) {
+      return <Intro close={this.closeIntro} />;
     }
-    return <p>Loading...</p>;
+    return (
+      <Provider store={store}>
+        <Wizard wizard={cat} />
+      </Provider>
+    );
   }
 }
