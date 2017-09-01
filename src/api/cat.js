@@ -32,7 +32,7 @@ export default {
           type: 'Branch',
           branches: [
             {
-              test: ({ preferences = {} }) => preferences.love === 'ja',
+              test: { field: 'preferences.love', operator: 'eq', value: 'ja' },
               children: [
                 {
                   property: 'living.type',
@@ -70,8 +70,15 @@ export default {
                   property: 'living.floor',
                   type: 'Select',
                   heading: 'I hvilken etasje bor du?',
-                  hidden: ({ living = {} }) =>
-                    !living.type || ['enebolig', 'rekkehus', 'annet'].indexOf(living.type) > -1,
+                  hidden: {
+                    type: 'or',
+                    clauses: [
+                      { field: 'living.type', operator: 'not' },
+                      { field: 'living.type', operator: 'eq', value: 'enebolig' },
+                      { field: 'living.type', operator: 'eq', value: 'rekkehus' },
+                      { field: 'living.type', operator: 'eq', value: 'annet' },
+                    ],
+                  },
                   suggestedAnswer: [
                     {
                       type: 'Answer',
@@ -154,8 +161,14 @@ export default {
                   property: 'living.contract',
                   type: 'Radio',
                   heading: 'Er dyrehold regulert av kontrakten din?',
-                  hidden: ({ living = {} }) =>
-                    !living.type || ['enebolig', 'annet'].indexOf(living.type) > -1,
+                  hidden: {
+                    type: 'or',
+                    clauses: [
+                      { field: 'living.type', operator: 'not' },
+                      { field: 'living.type', operator: 'eq', value: 'enebolig' },
+                      { field: 'living.type', operator: 'eq', value: 'annet' },
+                    ],
+                  },
                   suggestedAnswer: [
                     {
                       type: 'Answer',
@@ -173,7 +186,13 @@ export default {
                   property: 'living.animals',
                   type: 'Radio',
                   heading: 'Har du lov til å ha katt?',
-                  hidden: ({ living = {} }) => !living.contract || living.contract === 'nei',
+                  hidden: {
+                    type: 'or',
+                    clauses: [
+                      { field: 'living.contract', operator: 'not' },
+                      { field: 'living.contract', operator: 'eq', value: 'nei' },
+                    ],
+                  },
                   suggestedAnswer: [
                     {
                       type: 'Answer',
@@ -200,6 +219,7 @@ export default {
                   property: 'preferences.color',
                   type: 'Radio',
                   heading: 'Hva er yndlingsfargen din?',
+                  disabled: { field: 'living.gone', operator: 'lt', value: 4 },
                   suggestedAnswer: [
                     {
                       type: 'Answer',
@@ -221,7 +241,7 @@ export default {
               ],
             },
             {
-              test: ({ preferences = {} }) => preferences.love !== 'ja',
+              test: { field: 'preferences.love', operator: 'eq', value: 'ja' },
               children: [
                 {
                   id: 'nocat',
