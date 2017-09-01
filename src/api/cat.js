@@ -359,7 +359,7 @@ export default {
               heading: '1 Rammetillatelse',
               text:
                 'Det første steget i en byggesak er en søknad om rammetillatelse. Her beskrives det hva man skal bygge, endre eller utbedre.',
-              value: 'edderkopp',
+              value: '1',
               image: {
                 url: 'https://media.giphy.com/media/etSwiUkXNhTB6/giphy.gif',
                 alt: 'some alt',
@@ -370,7 +370,7 @@ export default {
               heading: '2 Igangsettelse',
               text:
                 'Dette er en søknad om hvorvidt man kan begynne selve byggearbeidet. Det er viktig å ikke ta ett eneste spadetak før man har fått godkjent denne!',
-              value: 'mus',
+              value: '2',
               image: {
                 url: 'https://media.giphy.com/media/2F5modVJ5dE9G/giphy.gif',
                 alt: 'some image alt',
@@ -381,13 +381,13 @@ export default {
               heading: '2 Igangsettelse no image',
               text:
                 'Dette er en søknad om hvorvidt man kan begynne selve byggearbeidet. Det er viktig å ikke ta ett eneste spadetak før man har fått godkjent denne!',
-              value: 'mus',
+              value: '3',
             },
             {
               type: 'Answer',
               text:
                 'no heading Dette er en søknad om hvorvidt man kan begynne selve byggearbeidet. Det er viktig å ikke ta ett eneste spadetak før man har fått godkjent denne!',
-              value: 'mus',
+              value: '4',
               image: {
                 url: 'https://media.giphy.com/media/t8dPLNzwF5HMc/giphy.gif',
                 alt: 'some image alt',
