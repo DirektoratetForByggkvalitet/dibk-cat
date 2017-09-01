@@ -299,7 +299,51 @@ export default {
           property: 'cat.image',
           type: 'Image',
           text: 'Dette er en bildeblokk',
-          url: 'https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif',
+          image: {
+            url: 'https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif',
+            alt: 'alt for image',
+          },
+        },
+        {
+          property: 'tiltaksklasse',
+          type: 'Radio',
+          heading: 'Hvilken tiltaksklasse er jobben1?',
+          text: '<a href="/somewhere">Les mer om tiltaksklasser</a>',
+          suggestedAnswer: [
+            {
+              type: 'Answer',
+              heading: 'Tiltaksklasse 1',
+              text:
+                'Som regel vil alt arbeid med oppføring av eneboliger, tomannsboliger og rekkehus komme inn under tiltaksklasse 1. Deler av utførelsen av større boligbygninger innitil 3 etasjer kan også være tiltaksklasse 1. Likevel kan det hende at noe av arbeidet er spesielt vanskelig og må settes til tiltaksklasse 2 eller 3. ',
+              image: {
+                url: 'https://media.giphy.com/media/l0MYNYaAeaQwtlOta/giphy.gif',
+                alt: 'alt for image',
+              },
+              value: 'tiltaksklasse1',
+            },
+            {
+              type: 'Answer',
+              heading: 'Tiltaksklasse 2',
+              text:
+                'Typiske bygninger i tiltaksklasse 2 er boligblokker og kontorbygg på 3-4 etasjer. Deler av utførelsen av større bygninger inntil 5 etasjer kan også være tiltaksklasse 2. Likevel kan det hende at noe av arbeidet er spesielt vanskelig og må settes til tiltaksklasse 3.',
+              image: {
+                url: 'https://media.giphy.com/media/3o6Ztrs0GnTt4GkFO0/giphy.gif',
+                alt: 'alt for image',
+              },
+              value: 'tiltaksklasse2',
+            },
+            {
+              type: 'Answer',
+              heading: 'Tiltaksklasse 3',
+              text:
+                'Arbeid med store og kompliserte bygninger er i tiltaksklasse 3. Det kan også være enkelte ansvarsområder i mindre bygninger som må settes i tiltaksklasse 3 fordi det er spesielt vanskelig',
+              image: {
+                url: 'https://media.giphy.com/media/5xtDarqCp0eomZaFJW8/giphy.gif',
+                alt: 'alt for image',
+              },
+              value: 'tiltaksklasse3',
+            },
+          ],
         },
       ],
     },
