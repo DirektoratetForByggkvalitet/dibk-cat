@@ -281,6 +281,10 @@ export default {
           heading: 'Skrive navnet på favoritt skuespilleren?',
           text: 'Input burde også ha noe brødtekst ikkesant?',
           placeholder: 'Kit Harington',
+          image: {
+            url: 'https://media.giphy.com/media/13f5iwTRuiEjjW/giphy.gif',
+            alt: 'alt for image',
+          },
         },
         {
           property: 'behavior.with.animals',
