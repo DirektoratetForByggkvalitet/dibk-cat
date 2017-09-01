@@ -241,7 +241,7 @@ export default {
               ],
             },
             {
-              test: { field: 'preferences.love', operator: 'eq', value: 'ja' },
+              test: { field: 'preferences.love', operator: 'neq', value: 'ja' },
               children: [
                 {
                   id: 'nocat',
