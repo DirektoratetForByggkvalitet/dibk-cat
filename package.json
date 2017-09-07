@@ -13,6 +13,7 @@
   },
   "scripts": {
     "start": "PORT=8080 react-scripts start",
+    "dev": "yarn start",
     "build": "react-scripts build",
     "test": "yarn run lint:js && react-scripts test --env=jsdom",
     "lint:js": "eslint . --ext .jsx,.js --ignore-pattern build",
