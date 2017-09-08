@@ -422,6 +422,12 @@ export default {
       type: 'Result',
       title: 'Hurra - du kan ha katt 🌈',
       lead: 'This is a lead for the page',
+      children: [
+        {
+          property: 'favourite.actor',
+          type: 'data',
+        },
+      ],
     },
   ],
 };
