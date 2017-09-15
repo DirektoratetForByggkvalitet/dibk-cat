@@ -425,7 +425,7 @@ export default {
       children: [
         {
           property: 'favourite.actor',
-          type: 'data',
+          type: 'Data',
         },
       ],
     },
