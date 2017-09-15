@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 
-import { Wizard } from 'dibk-wizard-framework';
+import { Wizard, StyleProvider } from 'dibk-wizard-framework';
 import store from './store';
 import cat from './api/cat';
 import Intro from './pages/Intro';
@@ -23,8 +23,13 @@ export default class App extends Component {
 
   render() {
     if (this.state.intro) {
-      return <Intro close={this.closeIntro} />;
+      return (
+        <StyleProvider>
+          <Intro close={this.closeIntro} />
+        </StyleProvider>
+      );
     }
+
     return (
       <Provider store={store}>
         <Wizard wizard={cat} />
