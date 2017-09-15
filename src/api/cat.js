@@ -35,174 +35,181 @@ export default {
               test: { field: 'preferences.love', operator: 'eq', value: 'ja' },
               children: [
                 {
-                  property: 'living.type',
-                  type: 'Radio',
-                  heading: 'Hvor bor du?',
-                  suggestedAnswer: [
+                  type: 'Group',
+                  title: 'Boforhold',
+                  text: 'Noe greier om hvordan du bor og sånt..',
+                  children: [
                     {
-                      type: 'Answer',
-                      text: 'Hybel',
-                      value: 'hybel',
+                      property: 'living.type',
+                      type: 'Radio',
+                      heading: 'Hvor bor du?',
+                      suggestedAnswer: [
+                        {
+                          type: 'Answer',
+                          text: 'Hybel',
+                          value: 'hybel',
+                        },
+                        {
+                          type: 'Answer',
+                          text: 'Leilighet',
+                          value: 'leilighet',
+                        },
+                        {
+                          type: 'Answer',
+                          text: 'Rekkehus',
+                          value: 'rekkehus',
+                        },
+                        {
+                          type: 'Answer',
+                          text: 'Enebolig',
+                          value: 'enebolig',
+                        },
+                        {
+                          type: 'Answer',
+                          text: 'Annet (men skal være input)',
+                          value: 'annet',
+                        },
+                      ],
                     },
                     {
-                      type: 'Answer',
-                      text: 'Leilighet',
-                      value: 'leilighet',
+                      property: 'living.floor',
+                      type: 'Select',
+                      heading: 'I hvilken etasje bor du?',
+                      hidden: {
+                        type: 'or',
+                        clauses: [
+                          { field: 'living.type', operator: 'not' },
+                          { field: 'living.type', operator: 'eq', value: 'enebolig' },
+                          { field: 'living.type', operator: 'eq', value: 'rekkehus' },
+                          { field: 'living.type', operator: 'eq', value: 'annet' },
+                        ],
+                      },
+                      suggestedAnswer: [
+                        {
+                          type: 'Answer',
+                          text: '1',
+                          value: '1',
+                        },
+                        {
+                          type: 'Answer',
+                          text: '2',
+                          value: '2',
+                        },
+                        {
+                          type: 'Answer',
+                          text: '3',
+                          value: '3',
+                        },
+                        {
+                          type: 'Answer',
+                          text: '4',
+                          value: '4',
+                        },
+                        {
+                          type: 'Answer',
+                          text: '5',
+                          value: '5',
+                        },
+                        {
+                          type: 'Answer',
+                          text: '6',
+                          value: '6',
+                        },
+                        {
+                          type: 'Answer',
+                          text: '7',
+                          value: '7',
+                        },
+                        {
+                          type: 'Answer',
+                          text: '8',
+                          value: '8',
+                        },
+                        {
+                          type: 'Answer',
+                          text: '9',
+                          value: '9',
+                        },
+                        {
+                          type: 'Answer',
+                          text: '10',
+                          value: '10',
+                        },
+                        {
+                          type: 'Answer',
+                          text: '11',
+                          value: '11',
+                        },
+                        {
+                          type: 'Answer',
+                          text: '12',
+                          value: '12',
+                        },
+                        {
+                          type: 'Answer',
+                          text: '13',
+                          value: '13',
+                        },
+                        {
+                          type: 'Answer',
+                          text: '14',
+                          value: '14',
+                        },
+                        {
+                          type: 'Answer',
+                          text: '15',
+                          value: '15',
+                        },
+                      ],
                     },
                     {
-                      type: 'Answer',
-                      text: 'Rekkehus',
-                      value: 'rekkehus',
+                      property: 'living.contract',
+                      type: 'Radio',
+                      heading: 'Er dyrehold regulert av kontrakten din?',
+                      hidden: {
+                        type: 'or',
+                        clauses: [
+                          { field: 'living.type', operator: 'not' },
+                          { field: 'living.type', operator: 'eq', value: 'enebolig' },
+                          { field: 'living.type', operator: 'eq', value: 'annet' },
+                        ],
+                      },
+                      suggestedAnswer: [
+                        {
+                          type: 'Answer',
+                          text: 'Ja',
+                          value: 'ja',
+                        },
+                        {
+                          type: 'Answer',
+                          text: 'Nei',
+                          value: 'nei',
+                        },
+                      ],
                     },
                     {
-                      type: 'Answer',
-                      text: 'Enebolig',
-                      value: 'enebolig',
-                    },
-                    {
-                      type: 'Answer',
-                      text: 'Annet (men skal være input)',
-                      value: 'annet',
-                    },
-                  ],
-                },
-                {
-                  property: 'living.floor',
-                  type: 'Select',
-                  heading: 'I hvilken etasje bor du?',
-                  hidden: {
-                    type: 'or',
-                    clauses: [
-                      { field: 'living.type', operator: 'not' },
-                      { field: 'living.type', operator: 'eq', value: 'enebolig' },
-                      { field: 'living.type', operator: 'eq', value: 'rekkehus' },
-                      { field: 'living.type', operator: 'eq', value: 'annet' },
-                    ],
-                  },
-                  suggestedAnswer: [
-                    {
-                      type: 'Answer',
-                      text: '1',
-                      value: '1',
-                    },
-                    {
-                      type: 'Answer',
-                      text: '2',
-                      value: '2',
-                    },
-                    {
-                      type: 'Answer',
-                      text: '3',
-                      value: '3',
-                    },
-                    {
-                      type: 'Answer',
-                      text: '4',
-                      value: '4',
-                    },
-                    {
-                      type: 'Answer',
-                      text: '5',
-                      value: '5',
-                    },
-                    {
-                      type: 'Answer',
-                      text: '6',
-                      value: '6',
-                    },
-                    {
-                      type: 'Answer',
-                      text: '7',
-                      value: '7',
-                    },
-                    {
-                      type: 'Answer',
-                      text: '8',
-                      value: '8',
-                    },
-                    {
-                      type: 'Answer',
-                      text: '9',
-                      value: '9',
-                    },
-                    {
-                      type: 'Answer',
-                      text: '10',
-                      value: '10',
-                    },
-                    {
-                      type: 'Answer',
-                      text: '11',
-                      value: '11',
-                    },
-                    {
-                      type: 'Answer',
-                      text: '12',
-                      value: '12',
-                    },
-                    {
-                      type: 'Answer',
-                      text: '13',
-                      value: '13',
-                    },
-                    {
-                      type: 'Answer',
-                      text: '14',
-                      value: '14',
-                    },
-                    {
-                      type: 'Answer',
-                      text: '15',
-                      value: '15',
-                    },
-                  ],
-                },
-                {
-                  property: 'living.contract',
-                  type: 'Radio',
-                  heading: 'Er dyrehold regulert av kontrakten din?',
-                  hidden: {
-                    type: 'or',
-                    clauses: [
-                      { field: 'living.type', operator: 'not' },
-                      { field: 'living.type', operator: 'eq', value: 'enebolig' },
-                      { field: 'living.type', operator: 'eq', value: 'annet' },
-                    ],
-                  },
-                  suggestedAnswer: [
-                    {
-                      type: 'Answer',
-                      text: 'Ja',
-                      value: 'ja',
-                    },
-                    {
-                      type: 'Answer',
-                      text: 'Nei',
-                      value: 'nei',
-                    },
-                  ],
-                },
-                {
-                  property: 'living.animals',
-                  type: 'Radio',
-                  heading: 'Har du lov til å ha katt?',
-                  hidden: {
-                    type: 'or',
-                    clauses: [
-                      { field: 'living.contract', operator: 'not' },
-                      { field: 'living.contract', operator: 'eq', value: 'nei' },
-                    ],
-                  },
-                  suggestedAnswer: [
-                    {
-                      type: 'Answer',
-                      text: 'Ja',
-                      value: 'ja',
-                    },
-                    {
-                      type: 'Answer',
-                      text: 'Nei',
-                      value: 'nei',
+                      property: 'living.animals',
+                      type: 'Radio',
+                      heading: 'Har du lov til å ha katt?',
+                      hidden: {
+                        type: 'or',
+                        clauses: [
+                          { field: 'living.contract', operator: 'not' },
+                          { field: 'living.contract', operator: 'eq', value: 'nei' },
+                        ],
+                      },
+                      suggestedAnswer: [
+                        {
+                          type: 'Answer',
+                          text: 'Ja',
+                          value: 'ja',
+                        },
+                        {
+                          type: 'Answer',
+                          text: 'Nei',
+                          value: 'nei',
+                        },
+                      ],
                     },
                   ],
                 },
@@ -298,6 +305,7 @@ export default {
         {
           property: 'favourite.actor',
           type: 'Input',
+          validator: { pattern: '^\\d+(,\\d+)?$', error: 'Oppgi på formatet 123,1239' },
           heading: 'Skrive navnet på din favoritt skuespiller?',
           text: 'Input burde også ha noe brødtekst ikkesant?',
           placeholder: 'Kit Harington',
