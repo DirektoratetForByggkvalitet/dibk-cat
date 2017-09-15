@@ -298,7 +298,7 @@ export default {
         {
           property: 'favourite.actor',
           type: 'Input',
-          heading: 'Skrive navnet på favoritt skuespilleren?',
+          heading: 'Skrive navnet på din favoritt skuespiller?',
           text: 'Input burde også ha noe brødtekst ikkesant?',
           placeholder: 'Kit Harington',
           image: {
@@ -425,6 +425,7 @@ export default {
       children: [
         {
           property: 'favourite.actor',
+          heading: 'Skrive navnet på din favoritt skuespiller?',
           type: 'Data',
         },
       ],
