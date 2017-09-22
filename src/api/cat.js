@@ -281,6 +281,8 @@ export default {
               type: 'Answer',
               text: 'Mus',
               value: 'mus',
+              //hidden: { field: 'preferences.predator.edderkopp', operator: 'eq', value: true },
+              disabled: { field: 'preferences.predator.edderkopp', operator: 'neq', value: true },
             },
             {
               type: 'Answer',
@@ -374,6 +376,7 @@ export default {
                 alt: 'alt for image',
               },
               value: 'tiltaksklasse3',
+              disabled: { field: 'samsvar.sende.1', operator: 'eq', value: true },
             },
           ],
         },
@@ -430,13 +433,6 @@ export default {
       type: 'Result',
       title: 'Hurra - du kan ha katt 🌈',
       lead: 'This is a lead for the page',
-      children: [
-        {
-          property: 'favourite.actor',
-          heading: 'Skrive navnet på din favoritt skuespiller?',
-          type: 'Data',
-        },
-      ],
     },
   ],
 };
