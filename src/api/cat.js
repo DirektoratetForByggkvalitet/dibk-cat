@@ -339,7 +339,7 @@ export default {
         {
           property: 'tiltaksklasse',
           type: 'Radio',
-          heading: 'Hvilken tiltaksklasse er jobben1?',
+          heading: 'Hvilken tiltaksklasse er jobben?',
           text: '<a href="/somewhere">Les mer om tiltaksklasser</a>',
           suggestedAnswer: [
             {
