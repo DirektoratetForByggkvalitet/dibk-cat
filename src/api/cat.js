@@ -236,6 +236,15 @@ export default {
                     'Er firmaets navn eller adresse feil? Da må du endre denne informasjonen via skjemaet <a href="https://www.altinn.no/noe">Samordnet registermelding</a> i Altinn før du fortsetter.',
                 },
                 {
+                  property: 'sgregistered',
+                  type: 'FetchSG',
+                  heading:
+                    'Rørleger Hasan AS er registrert med sentral godkjenning for følgende områder',
+                  text:
+                    'Godkjenningen er fra xx.xx.xx og viser hvilke fagområder firmaet har kompetanse på. Du kan likevel erklære ansvar for ansvarsområder som ligger utenfor den sentrale godkjenningen hvis firmaet ditt har nødvendig kunnskap og erfaring fra også det området.',
+                  source: 'https://sgregister.dibk.no/api/enterprises/',
+                },
+                {
                   property: 'preferences.color',
                   type: 'Radio',
                   heading: 'Hva er yndlingsfargen din?',
