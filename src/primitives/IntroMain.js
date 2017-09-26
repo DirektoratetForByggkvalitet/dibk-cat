@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
 export const IntroMain = styled.main`
-  margin: 0 auto 0 360px;
-  padding: 75px 0 200px;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 75px 35px;
+
   button {
     display: block;
     &::before, &::after {
