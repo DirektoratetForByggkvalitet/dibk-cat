@@ -224,6 +224,17 @@ export default {
                   step: 1,
                 },
                 {
+                  property: 'orgnr',
+                  type: 'FetchOrg',
+                  heading: 'Organisasjonsnummer',
+                  text: 'Eksempel: 123 456 789',
+                  placeholder: '987 654 321',
+                  source:
+                    'https://data.brreg.no/enhetsregisteret/enhet.json?page=0&size=30&$filter=organisasjonsnummer+eq+',
+                  information:
+                    'Er firmaets navn eller adresse feil? Da må du endre denne informasjonen via skjemaet <a href="https://www.altinn.no/noe">Samordnet registermelding</a> i Altinn før du fortsetter.',
+                },
+                {
                   property: 'preferences.color',
                   type: 'Radio',
                   heading: 'Hva er yndlingsfargen din?',
