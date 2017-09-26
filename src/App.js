@@ -6,6 +6,8 @@ import store from './store';
 import cat from './api/cat';
 import Intro from './pages/Intro';
 
+import dataExport from './exports/data-export';
+
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -32,7 +34,7 @@ export default class App extends Component {
 
     return (
       <Provider store={store}>
-        <Wizard wizard={cat} />
+        <Wizard wizard={cat} exports={{ dataExport }} />
       </Provider>
     );
   }
