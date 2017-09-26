@@ -2,9 +2,8 @@ import styled from 'styled-components';
 
 export const IntroMain = styled.main`
   margin: 0 auto;
-  max-width: 900px;
-  padding: 75px 35px;
-
+  max-width: 1000px;
+  padding: 75px 20px 200px;
   button {
     display: block;
     &::before, &::after {
@@ -29,7 +28,20 @@ export const IntroMain = styled.main`
     font-size: 12px;
   }
   @media screen and (max-width: 700px) {
-    padding: 75px 20px 200px;
+    figure {
+      float: none;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    button {
+      min-width: 40% !important;
+      text-align: center !important;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    button {
+      width: 100% !important;
+    }
   }
 `;
 

@@ -8,13 +8,13 @@ export default {
       id: 'relation',
       type: 'Page',
       title: 'Forhold til katter',
-      lead: 'This is a lead for the page',
+      lead: 'Før vi bestemmer hvilken katt som passer best for deg, må vi avgjøre om du kan ha katt i det hele tatt. Vennligst svar så sannferdig du klarer.',
       children: [
         {
           property: 'preferences.love',
           type: 'Radio',
           heading: 'Er du glad i katter?',
-          text: 'På en skala fra ja til nei, er du glad i katter?',
+          text: 'Svar helt ærlig. Dette er viktig både for katten og deg.',
           suggestedAnswer: [
             {
               type: 'Answer',
@@ -36,8 +36,8 @@ export default {
               children: [
                 {
                   type: 'Group',
-                  title: 'Boforhold',
-                  text: 'Noe greier om hvordan du bor og sånt..',
+                  heading: 'Boforhold',
+                  text: 'Din bosituasjon kan være avgjørende for hvilken katt du burde ha.',
                   children: [
                     {
                       property: 'living.type',
@@ -75,6 +75,7 @@ export default {
                       property: 'living.floor',
                       type: 'Select',
                       heading: 'I hvilken etasje bor du?',
+                      text: 'Hvis du bor veldig høyt oppe kan katten falle ned og dø.',
                       hidden: {
                         type: 'or',
                         clauses: [
@@ -265,8 +266,42 @@ export default {
       id: 'features',
       type: 'Page',
       title: 'Kattens egenskaper',
-      lead: 'This is a lead for the page',
+      lead: 'Spørsmålene på denne siden er kanskje vanskelige å svare på hvis du ikke har vært så mye sammen med katter før. Det skjønner vi. Men katter er like forskjellige som deg og meg! Prøv å se for deg livet med en fin katt.',
       children: [
+        {
+          type: 'Group',
+          heading: 'Katt og kos',
+          text: 'Noen katter hater kos. Noen katter liker å kose litt. Andre katter liker å kose veldig mye. Hva liker du?',
+          children: [
+            {
+              property: 'cuddle.hours',
+              type: 'Number',
+              heading: 'Hvor mange timer kan du kose med katten hver dag?',
+              placeholder: 'Timer',
+              minimum: 0,
+              maximum: 24,
+              step: 1,
+              text: 'Husk å beregne tid til å spise og sove for både deg og katten! <a href="/somewhere">Les mer om mat</a>',
+            },
+            {
+              property: 'cuddle.fur',
+              type: 'Radio',
+              heading: 'Hva slags pels liker du å kose med?',
+              suggestedAnswer: [
+                {
+                  type: 'Answer',
+                  text: 'Langhåret',
+                  value: 'langharet',
+                },
+                {
+                  type: 'Answer',
+                  text: 'Korthåret',
+                  value: 'kortharet',
+                },
+              ],
+            },
+          ],
+        },
         {
           property: 'preferences.predator',
           type: 'Checkbox',
@@ -299,6 +334,29 @@ export default {
       ],
     },
     {
+      id: 'optimalcat',
+      type: 'Page',
+      title: 'Din optimale katt',
+      lead: 'Katter finnes i mange forskjellige farger, størrelser og sinnelag. Her kan du beskrive din optimale katt i størst mulig detalj. Vi skjønner at du er ivrig, men helst ikke skriv så mye at vi ikke gidder å lese det.',
+      children: [
+        {
+          property: 'optimal.cat',
+          type: 'Textarea',
+          heading: 'Beskriv din optimale katt',
+          text: 'Eksempel: En katt som liker å kose, men ikke for mye.',
+        },
+        {
+          property: 'cat.image',
+          type: 'Image',
+          text: 'Er det denne katten?',
+          image: {
+            url: 'http://www.pngmart.com/files/1/Cat-Jump-PNG.png',
+            alt: 'alt for image',
+          },
+        },
+      ],
+    },
+    {
       id: 'testtypes',
       type: 'Page',
       title: 'Denne siden er for å teste alle de nye sidene',
@@ -308,26 +366,27 @@ export default {
           property: 'favourite.actor',
           type: 'Input',
           validator: { pattern: '^\\d+(,\\d+)?$', error: 'Oppgi på formatet 123,1239' },
-          heading: 'Skrive navnet på din favoritt skuespiller?',
-          text: 'Input burde også ha noe brødtekst ikkesant?',
+          heading: 'Hvem er din favorittskuespiller?',
+          text: 'Input burde kanskje ikke ha brødtekst som skiller spørsmål fra inputfelt?',
           placeholder: 'Kit Harington',
-          image: {
-            url: 'https://media.giphy.com/media/13f5iwTRuiEjjW/giphy.gif',
-            alt: 'alt for image',
-          },
         },
         {
           property: 'behavior.with.animals',
           type: 'Textarea',
-          heading: 'Skriv litt om hvordan du er med dyr?',
+          heading: 'Skriv litt om hvordan du er med dyr',
           placeholder: 'Hvordan oppfører du deg rundt dyr',
+          image: {
+            url: 'https://media.giphy.com/media/13f5iwTRuiEjjW/giphy.gif',
+            alt: 'alt for image',
+            text: 'Bildetekst her òg?',
+          },
         },
         {
           property: 'cat.information',
           type: 'Text',
-          heading: 'Dette er en textblokk',
+          heading: 'Et lite notis med tekst',
           text:
-            'We need this to support html <h1>Yes</h1><a href="somewhere">Somewhere</a> Cat ipsum dolor sit amet, always hungry man running from cops stops to pet cats, goes to jail step on your keyboard while you\'re gaming and then turn in a circle . Pose purrfectly to show my beauty woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now but lick plastic bags destroy couch, yet hunt by meowing loudly at 5am next to human slave food dispenser. Sleep nap meow meow or put toy mouse in food bowl run out of litter box at full speed but meow all night and hunt anything that moves. My left donut is missing, as is my right. Rub whiskers on bare skin act innocent shove bum in owner\'s face like camera lens but munch on tasty moths meow for meow all night. Need to chase tail massacre a bird in the living room and then look like the cutest and most innocent animal on the planet. ',
+            'Kanskje man trenger å ha litt mer tekst innimellom, som ikke hører til et konkret felt. Det er greit det altså. Cat ipsum dolor sit amet, always hungry man running from cops stops to <a href="somewhere">pet cats</a>, goes to jail step on your keyboard while you\'re gaming and then turn in a circle . Pose purrfectly to show my beauty woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean. Lick butt, next to <a href="somewhere">human slave food dispenser</a>.',
         },
         {
           property: 'cat.image',
