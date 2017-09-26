@@ -8,7 +8,8 @@ export default {
       id: 'relation',
       type: 'Page',
       title: 'Forhold til katter',
-      lead: 'Før vi bestemmer hvilken katt som passer best for deg, må vi avgjøre om du kan ha katt i det hele tatt. Vennligst svar så sannferdig du klarer.',
+      lead:
+        'Før vi bestemmer hvilken katt som passer best for deg, må vi avgjøre om du kan ha katt i det hele tatt. Vennligst svar så sannferdig du klarer.',
       children: [
         {
           property: 'preferences.love',
@@ -277,12 +278,14 @@ export default {
       id: 'features',
       type: 'Page',
       title: 'Kattens egenskaper',
-      lead: 'Spørsmålene på denne siden er kanskje vanskelige å svare på hvis du ikke har vært så mye sammen med katter før. Det skjønner vi. Men katter er like forskjellige som deg og meg! Prøv å se for deg livet med en fin katt.',
+      lead:
+        'Spørsmålene på denne siden er kanskje vanskelige å svare på hvis du ikke har vært så mye sammen med katter før. Det skjønner vi. Men katter er like forskjellige som deg og meg! Prøv å se for deg livet med en fin katt.',
       children: [
         {
           type: 'Group',
           heading: 'Katt og kos',
-          text: 'Noen katter hater kos. Noen katter liker å kose litt. Andre katter liker å kose veldig mye. Hva liker du?',
+          text:
+            'Noen katter hater kos. Noen katter liker å kose litt. Andre katter liker å kose veldig mye. Hva liker du?',
           children: [
             {
               property: 'cuddle.hours',
@@ -292,7 +295,8 @@ export default {
               minimum: 0,
               maximum: 24,
               step: 1,
-              text: 'Husk å beregne tid til å spise og sove for både deg og katten! <a href="/somewhere">Les mer om mat</a>',
+              text:
+                'Husk å beregne tid til å spise og sove for både deg og katten! <a href="/somewhere">Les mer om mat</a>',
             },
             {
               property: 'cuddle.fur',
@@ -348,7 +352,8 @@ export default {
       id: 'optimalcat',
       type: 'Page',
       title: 'Din optimale katt',
-      lead: 'Katter finnes i mange forskjellige farger, størrelser og sinnelag. Her kan du beskrive din optimale katt i størst mulig detalj. Vi skjønner at du er ivrig, men helst ikke skriv så mye at vi ikke gidder å lese det.',
+      lead:
+        'Katter finnes i mange forskjellige farger, størrelser og sinnelag. Her kan du beskrive din optimale katt i størst mulig detalj. Vi skjønner at du er ivrig, men helst ikke skriv så mye at vi ikke gidder å lese det.',
       children: [
         {
           property: 'optimal.cat',
