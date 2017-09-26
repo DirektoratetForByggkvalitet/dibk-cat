@@ -1,3 +1,5 @@
+/* globals window */
+
 import { createStore, combineReducers, compose } from 'redux';
 import { state } from 'dibk-wizard-framework';
 import { persistStore, autoRehydrate } from 'redux-persist';
@@ -7,10 +9,11 @@ import { persistStore, autoRehydrate } from 'redux-persist';
  */
 const store = createStore(
   combineReducers({ [state.NAME]: state.reducer }),
+  undefined,
   compose(
-    window.devToolsExtension ? window.devToolsExtension() : f => f,
     autoRehydrate(),
-  ) /* eslint no-undef: 0 */,
+    window.devToolsExtension ? window.devToolsExtension() : f => f,
+  ),
 );
 
 persistStore(store);
