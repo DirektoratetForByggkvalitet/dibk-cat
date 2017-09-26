@@ -9,16 +9,16 @@ export default function Intro({ close }) {
       <IntroMain>
         <header className="temp">(her kommer det såklart en header lik den i selve veiviseren)</header>
         <Primitives.Heading.H1>Burde du skaffe deg katt?</Primitives.Heading.H1>
+        <Primitives.Paragraphs.P>
+          Dette er en veiviser for deg som vil finne ut om du er kvalifisert til å skaffe den en søt og uskyldig(?) liten katt. Det vil si om du kan ta ansvar for de delene av arbeidet som en katt vil kreve av deg, og at du står ansvarlig for at arbeidet utføres riktig. Vi hjelper deg også å lage en erklæring for ansvarsrett som du kan skrive ut, signere og sende til ansvarlig søker, men det er i en annen veiviser.<br />
+          Du får kun velge ett ansvarsområde med én tiltalsklasse og én funksjon for hver gang du gjennomfører denne veiviseren. 
+        </Primitives.Paragraphs.P>
         <Primitives.Figure>
           <img src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/18447415_10155393402102558_3004629122651437765_n.jpg?oh=25762607ce16dceda32d1a69df61bde3&oe=5A47FED5" alt="katter er fine" />
           <figcaption>
             Bildetekst kanskje?
           </figcaption>
         </Primitives.Figure>
-        <Primitives.Paragraphs.P>
-          Dette er en veiviser for deg som vil finne ut om du er kvalifisert til å skaffe den en søt og uskyldig(?) liten katt. Det vil si om du kan ta ansvar for de delene av arbeidet som en katt vil kreve av deg, og at du står ansvarlig for at arbeidet utføres riktig. Vi hjelper deg også å lage en erklæring for ansvarsrett som du kan skrive ut, signere og sende til ansvarlig søker, men det er i en annen veiviser.<br />
-          Du får kun velge ett ansvarsområde med én tiltalsklasse og én funksjon for hver gang du gjennomfører denne veiviseren. 
-        </Primitives.Paragraphs.P>
         <Primitives.Heading.H2 small>Før du begynner må du vite:</Primitives.Heading.H2>
         <ol>
           <li>Hvem du er</li>
