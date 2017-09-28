@@ -310,6 +310,15 @@ export default {
                 'Husk å beregne tid til å spise og sove for både deg og katten! <a href="/somewhere">Les mer om mat</a>',
             },
             {
+              property: 'cuddle.image',
+              type: 'Image',
+              text: 'Noen ganger er det kanskje behov for et bilde for å demonstrere. Det er det egentlig ikke her.',
+              image: {
+                url: 'http://www.snugglebugs.dk/images/fig1.jpg',
+                alt: 'alt for image',
+              },
+            },
+            {
               property: 'cuddle.fur',
               type: 'Radio',
               heading: 'Hva slags pels liker du å kose med?',
