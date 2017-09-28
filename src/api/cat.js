@@ -239,7 +239,7 @@ export default {
                   property: 'sgregistered',
                   type: 'FetchSG',
                   heading:
-                    'Rørleger Hasan AS er registrert med sentral godkjenning for følgende områder',
+                    '${orgnr.name} er registrert med sentral godkjenning for følgende områder',
                   text:
                     'Godkjenningen er fra xx.xx.xx og viser hvilke fagområder firmaet har kompetanse på. Du kan likevel erklære ansvar for ansvarsområder som ligger utenfor den sentrale godkjenningen hvis firmaet ditt har nødvendig kunnskap og erfaring fra også det området.',
                   source: 'https://sgregister.dibk.no/api/enterprises/',
