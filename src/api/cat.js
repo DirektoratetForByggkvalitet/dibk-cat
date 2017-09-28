@@ -38,6 +38,7 @@ export default {
                 {
                   type: 'Group',
                   heading: 'Boforhold',
+                  property: 'living.type.group',
                   text: 'Din bosituasjon kan være avgjørende for hvilken katt du burde ha.',
                   children: [
                     {
@@ -240,6 +241,7 @@ export default {
                   type: 'FetchSG',
                   heading:
                     '${orgnr.name} er registrert med sentral godkjenning for følgende områder',
+                  disabled: { field: 'orgnr.orgid', operator: 'required' },
                   text:
                     'Godkjenningen er fra xx.xx.xx og viser hvilke fagområder firmaet har kompetanse på. Du kan likevel erklære ansvar for ansvarsområder som ligger utenfor den sentrale godkjenningen hvis firmaet ditt har nødvendig kunnskap og erfaring fra også det området.',
                   source: 'https://sgregister.dibk.no/api/enterprises/',
