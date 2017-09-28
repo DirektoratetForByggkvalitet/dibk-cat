@@ -381,6 +381,58 @@ export default {
             alt: 'alt for image',
           },
         },
+        {
+          property: 'example.cats',
+          type: 'Radio',
+          heading: 'Hvilken av disse kattene foretrekker du?',
+          text: '<a href="https://no.wikipedia.org/wiki/Kattefamilien" target="_blank">Les mer om katter</a>',
+          suggestedAnswer: [
+            {
+              type: 'Answer',
+              heading: 'Kjempesøt babykatt',
+              text:
+                'Denne katten er så liten at du kan ha den i lomma. Den er også kjempesøt og kjempeuskyldig. Det kan hende den bæsjer i senga di. Ingen vet hvor stor den blir, eller om den noensinne blir voksen.',
+              image: {
+                url: 'https://i.pinimg.com/736x/ba/03/23/ba03237a6d6499f0e2633314826e1526--cutest-animals-baby-animals.jpg',
+                alt: 'alt for image',
+              },
+              value: 'katt1',
+            },
+            {
+              type: 'Answer',
+              heading: 'Pølsekatt',
+              text:
+                'Dette er en veldig sjelden katt. Bare 1 av 8000 katter er pølsekatter. De krever ekstra mye kos og omsorg fordi de blir tvunget til å ha på seg den teite drakta. Det er en stor forpliktelse å få en slik katt.',
+              image: {
+                url: 'https://i.pinimg.com/736x/ae/51/9e/ae519e2800991519b1041a539747e0d4--food-costumes-costume-ideas.jpg',
+                alt: 'alt for image',
+              },
+              value: 'katt2',
+            },
+            {
+              type: 'Answer',
+              heading: 'Veldig smart katt',
+              text:
+                'Denne katten står bak hele denne veiviseren. Det er den smarteste katten i verden. Neida, vi bare tuller, katter kan jo ikke lage nettsider. Ennå, iallfall.',
+              image: {
+                url: 'http://r.fod4.com/c=sq/s=w350,pd1/o=80/http://a.fod4.com/images/user_photos/1356209/afb26342d1d2f37ff156724ed9eaa822_square_fullsize.',
+                alt: 'alt for image',
+              },
+              value: 'katt3',
+            },
+            {
+              type: 'Answer',
+              heading: 'Sint katt',
+              text:
+                'Dette er en veldig sint katt som hater alt. Den vil ikke kose, aller minst med deg. Du får definitivt være i fred hvis du skaffer deg denne katten.',
+              image: {
+                url: 'https://us.123rf.com/450wm/isselee/isselee1006/isselee100601392/7121151-close-up-di-chihuahua-arrabbiato-ringhio-2-anni-di-et--davanti-a-sfondo-bianco.jpg?ver=6',
+                alt: 'alt for image',
+              },
+              value: 'katt4',
+            },
+          ],
+        },
       ],
     },
     {
@@ -518,7 +570,7 @@ export default {
       id: 'hooray',
       type: 'Result',
       title: 'Hurra - du kan ha katt 🌈',
-      lead: 'This is a lead for the page',
+      lead: 'Les nøye gjennom svarene dine, og sjekk at alt stemmer før du tar med deg resultatene til ditt nærmeste adopsjonssenter for katter. Husk at du vil bli stilt til ansvar for at katten får det bra hos deg!',
       exporter: 'dataExport',
     },
   ],
