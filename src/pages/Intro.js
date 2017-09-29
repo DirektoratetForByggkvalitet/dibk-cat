@@ -41,7 +41,7 @@ export default function Intro({ close }) {
           annen veiviser vil du kanskje få erklæring tilsendt på e-post, slik at du kan signere den
           og sende den videre til ansvarlig søker.
         </Primitives.Paragraphs.P>
-        <Primitives.Button onClick={() => close()}>Start veiviseren</Primitives.Button>
+        <Primitives.Button.MainButton onClick={() => close()}>Start veiviseren</Primitives.Button.MainButton>
       </IntroMain>
     </Primitives.Wizard>
   );

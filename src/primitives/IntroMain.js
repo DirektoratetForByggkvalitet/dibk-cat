@@ -17,6 +17,10 @@ export const IntroMain = styled.main`
   ol, p {
     margin-bottom: 40px;
   }
+  ol li {
+    counter-increment: step-counter;
+    color: gold;
+  }
   header.temp {
     position: absolute;
     top: 0;
