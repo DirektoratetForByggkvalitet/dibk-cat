@@ -239,10 +239,10 @@ export default {
                 {
                   property: 'sgregistered',
                   type: 'FetchSG',
-                  heading: '{name} er registrert med sentral godkjenning for følgende områder',
+                  heading: '${name} er registrert med sentral godkjenning for følgende områder',
                   disabled: { field: 'orgnr.orgid', operator: 'required' },
                   text:
-                    'Godkjenningen er til {status.approval_period_to} og viser hvilke fagområder firmaet har kompetanse på. Du kan likevel erklære ansvar for ansvarsområder som ligger utenfor den sentrale godkjenningen hvis firmaet ditt har nødvendig kunnskap og erfaring fra også det området.',
+                    'Godkjenningen er til ${status.approval_period_to} og viser hvilke fagområder firmaet har kompetanse på. Du kan likevel erklære ansvar for ansvarsområder som ligger utenfor den sentrale godkjenningen hvis firmaet ditt har nødvendig kunnskap og erfaring fra også det området.',
                   invalidapproval: 'Vi fant ikke godkjenningen din i systemet vårt',
                   source: 'https://sgregister.dibk.no/api/enterprises/',
                 },
@@ -312,7 +312,8 @@ export default {
             {
               property: 'cuddle.image',
               type: 'Image',
-              text: 'Noen ganger er det kanskje behov for et bilde for å demonstrere. Det er det egentlig ikke her.',
+              text:
+                'Noen ganger er det kanskje behov for et bilde for å demonstrere. Det er det egentlig ikke her.',
               image: {
                 url: 'http://www.snugglebugs.dk/images/fig1.jpg',
                 alt: 'alt for image',
@@ -394,7 +395,8 @@ export default {
           property: 'example.cats',
           type: 'Radio',
           heading: 'Hvilken av disse kattene foretrekker du?',
-          text: '<a href="https://no.wikipedia.org/wiki/Kattefamilien" target="_blank">Les mer om katter</a>',
+          text:
+            '<a href="https://no.wikipedia.org/wiki/Kattefamilien" target="_blank">Les mer om katter</a>',
           suggestedAnswer: [
             {
               type: 'Answer',
@@ -402,7 +404,8 @@ export default {
               text:
                 'Denne katten er så liten at du kan ha den i lomma. Den er også kjempesøt og kjempeuskyldig. Det kan hende den bæsjer i senga di. Ingen vet hvor stor den blir, eller om den noensinne blir voksen.',
               image: {
-                url: 'https://i.pinimg.com/736x/ba/03/23/ba03237a6d6499f0e2633314826e1526--cutest-animals-baby-animals.jpg',
+                url:
+                  'https://i.pinimg.com/736x/ba/03/23/ba03237a6d6499f0e2633314826e1526--cutest-animals-baby-animals.jpg',
                 alt: 'alt for image',
               },
               value: 'katt1',
@@ -413,7 +416,8 @@ export default {
               text:
                 'Dette er en veldig sjelden katt. Bare 1 av 8000 katter er pølsekatter. De krever ekstra mye kos og omsorg fordi de blir tvunget til å ha på seg den teite drakta. Det er en stor forpliktelse å få en slik katt.',
               image: {
-                url: 'https://i.pinimg.com/736x/ae/51/9e/ae519e2800991519b1041a539747e0d4--food-costumes-costume-ideas.jpg',
+                url:
+                  'https://i.pinimg.com/736x/ae/51/9e/ae519e2800991519b1041a539747e0d4--food-costumes-costume-ideas.jpg',
                 alt: 'alt for image',
               },
               value: 'katt2',
@@ -424,7 +428,8 @@ export default {
               text:
                 'Denne katten står bak hele denne veiviseren. Det er den smarteste katten i verden. Neida, vi bare tuller, katter kan jo ikke lage nettsider. Ennå, iallfall.',
               image: {
-                url: 'http://r.fod4.com/c=sq/s=w350,pd1/o=80/http://a.fod4.com/images/user_photos/1356209/afb26342d1d2f37ff156724ed9eaa822_square_fullsize.',
+                url:
+                  'http://r.fod4.com/c=sq/s=w350,pd1/o=80/http://a.fod4.com/images/user_photos/1356209/afb26342d1d2f37ff156724ed9eaa822_square_fullsize.',
                 alt: 'alt for image',
               },
               value: 'katt3',
@@ -435,7 +440,8 @@ export default {
               text:
                 'Dette er en veldig sint katt som hater alt. Den vil ikke kose, aller minst med deg. Du får definitivt være i fred hvis du skaffer deg denne katten.',
               image: {
-                url: 'https://us.123rf.com/450wm/isselee/isselee1006/isselee100601392/7121151-close-up-di-chihuahua-arrabbiato-ringhio-2-anni-di-et--davanti-a-sfondo-bianco.jpg?ver=6',
+                url:
+                  'https://us.123rf.com/450wm/isselee/isselee1006/isselee100601392/7121151-close-up-di-chihuahua-arrabbiato-ringhio-2-anni-di-et--davanti-a-sfondo-bianco.jpg?ver=6',
                 alt: 'alt for image',
               },
               value: 'katt4',
@@ -579,7 +585,8 @@ export default {
       id: 'hooray',
       type: 'Result',
       title: 'Hurra - du kan ha katt 🌈',
-      lead: 'Les nøye gjennom svarene dine, og sjekk at alt stemmer før du tar med deg resultatene til ditt nærmeste adopsjonssenter for katter. Husk at du vil bli stilt til ansvar for at katten får det bra hos deg!',
+      lead:
+        'Les nøye gjennom svarene dine, og sjekk at alt stemmer før du tar med deg resultatene til ditt nærmeste adopsjonssenter for katter. Husk at du vil bli stilt til ansvar for at katten får det bra hos deg!',
       exporter: 'dataExport',
     },
   ],
