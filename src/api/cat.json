@@ -380,7 +380,8 @@
           "property": "optimal.cat",
           "type": "Textarea",
           "heading": "Beskriv din optimale katt",
-          "text": "Eksempel: En katt som liker å kose, men ikke for mye."
+          "text": "Eksempel: En katt som liker å kose, men ikke for mye.",
+          "information": "Husk at det du beskriver her vil bli avgjørende for hvilken katt du får."
         },
         {
           "property": "cat.image",
@@ -443,7 +444,7 @@
     {
       "id": "testtypes",
       "type": "Page",
-      "title": "Firma info",
+      "title": "Informasjon om firmaet",
       "lead": "En samling av noen spesielle komponenter.",
       "children": [{
           "type": "Group",

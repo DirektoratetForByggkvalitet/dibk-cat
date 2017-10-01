@@ -8,7 +8,7 @@ export default function Intro({ close }) {
     <Primitives.Wizard>
       <IntroMain>
         <header className="temp">
-          (her kommer det såklart en header lik den i selve veiviseren)
+          DiBK logo
         </header>
         <Primitives.Heading.H1>Burde du skaffe deg katt?</Primitives.Heading.H1>
         <Primitives.Paragraphs.P>
@@ -31,6 +31,7 @@ export default function Intro({ close }) {
         <ol>
           <li>Hvem du er</li>
           <li>Hvor du bor</li>
+          <li>Disse punktene kan også gå over to linjer, just saying, tenkte det ville være fint å vise det.</li>
           <li>Hvor mange timer du er borte fra boligen din hver dag</li>
         </ol>
         <Primitives.Heading.H2 small>Usikker?</Primitives.Heading.H2>
