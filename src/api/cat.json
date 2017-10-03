@@ -381,7 +381,9 @@
           "type": "Textarea",
           "heading": "Beskriv din optimale katt",
           "text": "Eksempel: En katt som liker å kose, men ikke for mye.",
-          "information": "Husk at det du beskriver her vil bli avgjørende for hvilken katt du får."
+          "information": "Husk at det du beskriver her vil bli avgjørende for hvilken katt du får.",
+          "summary": "Se eksempler",
+          "details": "<h3>Grunnarbeider</h3><p>Graving og sprengning av byggegrop, kulting og komprimering, legging av radonsperre, samt graving og gjenfylling av grøfter.</p><h3>Plassering</h3><p>Utstikking av høyde og plan før graving. Kvalitetssikre plassering av såle og grunnmur.</p><h3>Arkitektur</h3><p>Prosjektering av situasjonsplan, visuell utforming og terrengtilpasning, innvendig planløsning.</p>"
         },
         {
           "property": "cat.image",
