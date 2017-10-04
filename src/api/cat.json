@@ -471,6 +471,7 @@
         },
         {
           "type": "Group",
+          "simple": true,
           "heading": "Kontaktperson for prosjektet",
           "property": "contactperson",
           "children": [{
