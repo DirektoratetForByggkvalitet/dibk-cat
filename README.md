@@ -4,9 +4,9 @@ We made an Invision prototype that can be found here https://projects.invisionap
 
 ## Development
 
-You need to link the netliferesearch/dibk-wizard-framework to run this project locally. Head over to you clone of that repo in the terminal and type `yarn link`.
+You need to link netliferesearch/losen to run this project locally. Head over to you clone of that repo in the terminal and type `yarn link`.
 
-Head back to this repo in you terminal and type `yarn link dibk-wizard-framework`.
+Head back to this repo in you terminal and type `yarn link losen`.
 
 Then run `yarn start` to run the development server.
 
