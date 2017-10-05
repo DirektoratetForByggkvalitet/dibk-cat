@@ -7,9 +7,6 @@ export default function Intro({ close }) {
   return (
     <Primitives.Wizard>
       <IntroMain>
-        <header className="temp">
-          DiBK logo
-        </header>
         <Primitives.Heading.H1>Burde du skaffe deg katt?</Primitives.Heading.H1>
         <Primitives.Paragraphs.P>
           Dette er en veiviser for deg som vil finne ut om du er kvalifisert til å skaffe den en søt
