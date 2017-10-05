@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';
-
 import { Wizard, StyleProvider } from 'losen';
+
 import store from './store';
 import cat from './api/cat.json';
 import Intro from './pages/Intro';
@@ -9,19 +10,17 @@ import Intro from './pages/Intro';
 import dataExport from './exports/data-export';
 
 export default class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      intro: true,
-    };
-    this.closeIntro = this.closeIntro.bind(this);
+  static propTypes = {
+    translations: PropTypes.object,
   }
 
-  closeIntro() {
-    this.setState({
-      intro: false,
-    });
+  static defaultProps = {
+    translations: {},
   }
+
+  state = { intro: true }
+
+  closeIntro = () => this.setState({ intro: false });
 
   render() {
     if (this.state.intro) {
@@ -34,7 +33,11 @@ export default class App extends Component {
 
     return (
       <Provider store={store}>
-        <Wizard wizard={cat} exports={{ dataExport }} />
+        <Wizard
+          wizard={cat}
+          translations={this.props.translations}
+          exports={{ dataExport }}
+        />
       </Provider>
     );
   }
