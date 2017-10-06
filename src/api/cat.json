@@ -13,7 +13,7 @@
           "type": "Radio",
           "heading": "Er du glad i katter?",
           "text": "Svar helt ærlig. Dette er viktig både for katten og deg.",
-          "suggestedAnswer": [{
+          "options": [{
               "type": "Answer",
               "text": "Ja",
               "value": "ja"
@@ -43,7 +43,7 @@
                       "property": "living.type",
                       "type": "Radio",
                       "heading": "Hvor bor du?",
-                      "suggestedAnswer": [{
+                      "options": [{
                           "type": "Answer",
                           "text": "Hybel",
                           "value": "hybel"
@@ -98,7 +98,7 @@
                           }
                         ]
                       },
-                      "suggestedAnswer": [{
+                      "options": [{
                           "type": "Answer",
                           "text": "1",
                           "value": "1"
@@ -197,7 +197,7 @@
                           }
                         ]
                       },
-                      "suggestedAnswer": [{
+                      "options": [{
                           "type": "Answer",
                           "text": "Ja",
                           "value": "ja"
@@ -226,7 +226,7 @@
                           }
                         ]
                       },
-                      "suggestedAnswer": [{
+                      "options": [{
                           "type": "Answer",
                           "text": "Ja",
                           "value": "ja"
@@ -258,7 +258,7 @@
                     "operator": "lt",
                     "value": 4
                   },
-                  "suggestedAnswer": [{
+                  "options": [{
                       "type": "Answer",
                       "text": "Brun",
                       "value": "brun"
@@ -325,7 +325,7 @@
               "property": "cuddle.fur",
               "type": "Radio",
               "heading": "Hva slags pels liker du å kose med?",
-              "suggestedAnswer": [{
+              "options": [{
                   "type": "Answer",
                   "text": "Langhåret",
                   "value": "langharet"
@@ -343,7 +343,7 @@
           "property": "preferences.predator",
           "type": "Checkbox",
           "heading": "Trenger du en katt som kan fange ekle dyr i huset ditt?",
-          "suggestedAnswer": [{
+          "options": [{
               "type": "Answer",
               "text": "Edderkopp",
               "value": "edderkopp"
@@ -400,7 +400,7 @@
           "type": "Radio",
           "heading": "Hvilken av disse kattene foretrekker du?",
           "text": "<a href=\"https://no.wikipedia.org/wiki/Kattefamilien\" target=\"_blank\">Les mer om katter</a>",
-          "suggestedAnswer": [{
+          "options": [{
               "type": "Answer",
               "heading": "Kjempesøt babykatt",
               "text": "Denne katten er så liten at du kan ha den i lomma. Den er også kjempesøt og kjempeuskyldig. Det kan hende den bæsjer i senga di. Ingen vet hvor stor den blir, eller om den noensinne blir voksen.",
