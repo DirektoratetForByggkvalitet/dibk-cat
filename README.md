@@ -1,4 +1,4 @@
-# [dibk-cat](https://dibk-cat.firebaseapp.com/)
+# [dibk-cat](https://dibk-cat.firebaseapp.com/) [![Build Status](https://travis-ci.com/netliferesearch/dibk-cat.svg?token=7NpjNJdFW93Qs1rPvcce&branch=master)](https://travis-ci.com/netliferesearch/dibk-cat)
 
 The dibk-cat project is a demo wizard that uses [losen](https://github.com/netliferesearch/losen).  
 The documentation for losen can be found here https://dibk-storybook.firebaseapp.com/.  
