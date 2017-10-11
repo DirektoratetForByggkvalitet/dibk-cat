@@ -19,4 +19,3 @@ translations = Object.keys(translations).reduce((res, id) => {
 }, {});
 
 ReactDOM.render(<App translations={translations} />, root); /* eslint no-undef: 0 */
-registerServiceWorker();
