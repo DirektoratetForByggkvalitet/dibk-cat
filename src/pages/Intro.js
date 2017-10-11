@@ -28,7 +28,10 @@ export default function Intro({ close }) {
         <ol>
           <li>Hvem du er</li>
           <li>Hvor du bor</li>
-          <li>Disse punktene kan også gå over to linjer, just saying, tenkte det ville være fint å vise det.</li>
+          <li>
+            Disse punktene kan også gå over to linjer, just saying, tenkte det ville være fint å
+            vise det.
+          </li>
           <li>Hvor mange timer du er borte fra boligen din hver dag</li>
         </ol>
         <Primitives.Heading.H2 small>Usikker?</Primitives.Heading.H2>
@@ -39,7 +42,9 @@ export default function Intro({ close }) {
           annen veiviser vil du kanskje få erklæring tilsendt på e-post, slik at du kan signere den
           og sende den videre til ansvarlig søker.
         </Primitives.Paragraphs.P>
-        <Primitives.Button.MainButton onClick={() => close()}>Start veiviseren</Primitives.Button.MainButton>
+        <Primitives.Button.MainButton onClick={() => close()}>
+          Start veiviseren
+        </Primitives.Button.MainButton>
       </IntroMain>
     </Primitives.Wizard>
   );

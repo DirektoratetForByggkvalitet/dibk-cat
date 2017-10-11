@@ -7,7 +7,8 @@
 
 // To learn more about the benefits of this model, read https://goo.gl/KwvDNy.
 // This link also includes instructions on opting out of this behavior.
-/* eslint no-undef: 0 */
+/* eslint no-undef: 0, no-console: 0, no-use-before-define: 0 */
+/* eslint no-param-reassign: 0, function-paren-newline: 0 */
 const isLocalhost = Boolean(
   window.location.hostname === 'localhost' ||
     // [::1] is the IPv6 localhost address.
@@ -26,7 +27,7 @@ export default function register() {
       // serve assets; see https://github.com/facebookincubator/create-react-app/issues/2374
       return;
     }
-
+    // eslint no-console:0
     window.addEventListener('load', () => {
       const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
 
