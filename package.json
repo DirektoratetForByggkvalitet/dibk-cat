@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "lodash.get": "^4.4.2",
-    "losen": "0.9.1",
+    "losen": "*",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
