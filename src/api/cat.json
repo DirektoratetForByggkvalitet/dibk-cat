@@ -10,22 +10,26 @@
       "heading": "Får du lov til å skaffe deg katt?",
       "lead": "Før vi kan finne en katt som passer deg, må vi finne ut om du får lov til å ha katt i det hele tatt. Er du usikker på å hva å svare? Spør en voksen om hjelp.",
       "children": [{
+          "id": "preferencesLove",
           "property": "preferences.love",
           "type": "Radio",
           "heading": "Er du glad i katter?",
           "text": "Svar helt ærlig. Dette er viktig både for katten og deg.",
           "options": [
             {
+              "id": "preferencesLove.ja",
               "type": "Answer",
               "text": "Ja",
               "value": "ja"
             },
             {
+              "id": "preferencesLove.nei",
               "type": "Answer",
               "text": "Nei",
               "value": "nei"
             },
             {
+              "id": "preferencesLove.vetikke",
               "type": "Answer",
               "text": "Vet ikke",
               "value": "vetikke"
@@ -49,26 +53,31 @@
                   "property": "living.type.group",
                   "text": "Boligen du har kan bestemme om du får lov til å ha katt.",
                   "children": [{
+                      "id": "livingType",
                       "property": "living.type",
                       "type": "Radio",
                       "heading": "Hvor bor du?",
                       "options": [
                         {
+                          "id": "livingType.hybel",
                           "type": "Answer",
                           "text": "Hybel",
                           "value": "hybel"
                         },
                         {
+                          "id": "livingType.leilighet",
                           "type": "Answer",
                           "text": "Leilighet",
                           "value": "leilighet"
                         },
                         {
+                          "id": "livingType.rekkehus",
                           "type": "Answer",
                           "text": "Rekkehus",
                           "value": "rekkehus"
                         },
                         {
+                          "id": "livingType.enebolig",
                           "type": "Answer",
                           "text": "Enebolig",
                           "value": "enebolig"
@@ -76,6 +85,7 @@
                       ]
                     },
                     {
+                      "id": "livingFloor",
                       "property": "living.floor",
                       "type": "Select",
                       "heading": "I hvilken etasje bor du?",
@@ -106,83 +116,69 @@
                       },
                       "options": [
                         {
+                          "id": "livingFloor.1",
                           "type": "Answer",
                           "text": "1",
                           "value": "1"
                         },
                         {
+                          "id": "livingFloor.2",
                           "type": "Answer",
                           "text": "2",
                           "value": "2"
                         },
                         {
+                          "id": "livingFloor.3",
                           "type": "Answer",
                           "text": "3",
                           "value": "3"
                         },
                         {
+                          "id": "livingFloor.4",
                           "type": "Answer",
                           "text": "4",
                           "value": "4"
                         },
                         {
+                          "id": "livingFloor.5",
                           "type": "Answer",
                           "text": "5",
                           "value": "5"
                         },
                         {
+                          "id": "livingFloor.6",
                           "type": "Answer",
                           "text": "6",
                           "value": "6"
                         },
                         {
+                          "id": "livingFloor.7",
                           "type": "Answer",
                           "text": "7",
                           "value": "7"
                         },
                         {
+                          "id": "livingFloor.8",
                           "type": "Answer",
                           "text": "8",
                           "value": "8"
                         },
                         {
+                          "id": "livingFloor.9",
                           "type": "Answer",
                           "text": "9",
                           "value": "9"
                         },
                         {
+                          "id": "livingFloor.10",
                           "type": "Answer",
                           "text": "10",
                           "value": "10"
-                        },
-                        {
-                          "type": "Answer",
-                          "text": "11",
-                          "value": "11"
-                        },
-                        {
-                          "type": "Answer",
-                          "text": "12",
-                          "value": "12"
-                        },
-                        {
-                          "type": "Answer",
-                          "text": "13",
-                          "value": "13"
-                        },
-                        {
-                          "type": "Answer",
-                          "text": "14",
-                          "value": "14"
-                        },
-                        {
-                          "type": "Answer",
-                          "text": "15",
-                          "value": "15"
                         }
                       ]
                     },
                     {
+                      "id": "livingContract",
                       "property": "living.contract",
                       "type": "Radio",
                       "heading": "Er dyrehold regulert av kontrakten din?",
@@ -207,11 +203,13 @@
                       },
                       "options": [
                         {
+                          "id": "livingContract.ja",
                           "type": "Answer",
                           "text": "Ja",
                           "value": "ja"
                         },
                         {
+                          "id": "livingContract.nei",
                           "type": "Answer",
                           "text": "Nei",
                           "value": "nei"
@@ -219,6 +217,7 @@
                       ]
                     },
                     {
+                      "id": "livingAnimals",
                       "property": "living.animals",
                       "type": "Radio",
                       "heading": "Har du lov til å ha katt?",
@@ -238,11 +237,13 @@
                       },
                       "options": [
                         {
+                          "id": "livingAnimals.ja",
                           "type": "Answer",
                           "text": "Ja",
                           "value": "ja"
                         },
                         {
+                          "id": "livingAnimals.nei",
                           "type": "Answer",
                           "text": "Nei",
                           "value": "nei"
@@ -261,20 +262,24 @@
                   "step": 1
                 },
                 {
+                  "id": "livingGonewhere",
                   "property": "living.gonewhere",
                   "type": "Radio",
                   "heading": "Hvor er du mesteparten av denne tiden?",
                   "options": [{
+                      "id": "livingGonewhere.barnehagen",
                       "type": "Answer",
                       "text": "I barnehagen",
                       "value": "barnehagen"
                     },
                     {
+                      "id": "livingGonewhere.skolen",
                       "type": "Answer",
                       "text": "På skolen",
                       "value": "skolen"
                     },
                     {
+                      "id": "livingGonewhere.venner",
                       "type": "Answer",
                       "text": "Hos venner",
                       "value": "venner"
@@ -282,6 +287,7 @@
                   ]
                 },
                 {
+                  "id": "outdoor",
                   "property": "outdoor",
                   "type": "Radio",
                   "heading": "Skal katten din være en utekatt eller en innekatt?",
@@ -289,11 +295,13 @@
                     "En innekatt og en utekatt lever veldig forskjellige liv. Innekatten har et begrenset territorium og lever i et beskyttet miljø, mens utekatten kan gå fritt over et mye større område og utsettes for farer av forskjellige slag. Utekatten blir også mer påvirket av vekslingene mellom årstidene. Forskjellene mellom innekattens og utekattens livsstil gjør at de har ulike næringsbehov.",
                   "options": [
                     {
+                      "id": "outdoor.outside",
                       "type": "Answer",
                       "text": "Utekatt",
                       "value": "outside"
                     },
                     {
+                      "id": "outdoor.inside",
                       "type": "Answer",
                       "text": "Innekatt",
                       "value": "inside"
@@ -401,6 +409,7 @@
               }
             },
             {
+              "id": "cuddleFur",
               "property": "cuddle.fur",
               "type": "Radio",
               "heading": "Hva slags pels liker du å kose med?",
@@ -410,11 +419,13 @@
                 "value": 4
               },
               "options": [{
+                  "id": "cuddleFur.langharet",
                   "type": "Answer",
                   "text": "Langhåret",
                   "value": "langharet"
                 },
                 {
+                  "id": "cuddleFur.kortharet",
                   "type": "Answer",
                   "text": "Korthåret",
                   "value": "kortharet"
@@ -470,6 +481,7 @@
           "details": "<h4>Katt som er flink med grunnarbeider</h4><p>Jeg vil ha en katt som er flink med graving og sprengning av byggegrop, kulting og komprimering, legging av radonsperre, samt graving og gjenfylling av grøfter.</p><h4>Katt som er flink med plassering</h4><p>Jeg vil ha en katt som er flink med utstikking av høyde og plan før graving. Kvalitetssikre plassering av såle og grunnmur.</p><h4>Katt som er flink med arkitektur</h4><p>Jeg vil ha en katt som er flink med prosjektering av situasjonsplan, visuell utforming og terrengtilpasning, innvendig planløsning.</p>"
         },
         {
+          "id": "catImage",
           "property": "cat.image",
           "type": "Image",
           "text": "Er det denne katten?",
@@ -479,6 +491,7 @@
           }
         },
         {
+          "id": "exampleCats",
           "property": "example.cats",
           "type": "Radio",
           "heading": "Hvilken av disse kattene foretrekker du?",
@@ -486,6 +499,7 @@
             "<a href=\"https://no.wikipedia.org/wiki/Kattefamilien\" target=\"_blank\">Les mer om katter</a>",
           "options": [
             {
+              "id": "exampleCats.katt1",
               "type": "Answer",
               "heading": "Kjempesøt babykatt",
               "text":
@@ -498,6 +512,7 @@
               "value": "katt1"
             },
             {
+              "id": "exampleCats.katt2",
               "type": "Answer",
               "heading": "Pølsekatt",
               "text":
@@ -510,6 +525,7 @@
               "value": "katt2"
             },
             {
+              "id": "exampleCats.katt3",
               "type": "Answer",
               "heading": "Veldig smart katt",
               "text":
@@ -522,6 +538,7 @@
               "value": "katt3"
             },
             {
+              "id": "exampleCats.katt4",
               "type": "Answer",
               "heading": "Sint katt",
               "text":
