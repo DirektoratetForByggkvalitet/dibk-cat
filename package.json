@@ -14,7 +14,7 @@
     "styled-components": "^2.1.2"
   },
   "scripts": {
-    "start": "PORT=8080 react-scripts start",
+    "start": "PORT=8000 react-scripts start",
     "dev": "npm start",
     "build": "react-scripts build",
     "test": "npm run lint:js && react-scripts test --env=jsdom",

@@ -18,7 +18,7 @@ export default class App extends Component {
     translations: {},
   }
 
-  state = { intro: true }
+  state = { intro: false }
 
   closeIntro = () => this.setState({ intro: false });
 

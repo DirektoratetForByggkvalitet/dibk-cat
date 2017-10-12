@@ -6,8 +6,8 @@
   "schema": [{
       "id": "relation",
       "type": "Page",
-      "heading": "Forhold til katter",
-      "lead": "Før vi bestemmer hvilken katt som passer best for deg, må vi avgjøre om du kan ha katt i det hele tatt. Vennligst svar så sannferdig du klarer.",
+      "heading": "Får du lov til å skaffe deg katt?",
+      "lead": "Før vi kan finne en katt som passer deg, må vi finne ut om du får lov til å ha katt i det hele tatt. Er du usikker på å hva å svare? Spør en voksen om hjelp.",
       "children": [{
           "property": "preferences.love",
           "type": "Radio",
@@ -22,6 +22,11 @@
               "type": "Answer",
               "text": "Nei",
               "value": "nei"
+            },
+            {
+              "type": "Answer",
+              "text": "Vet ikke",
+              "value": "vetikke"
             }
           ]
         },
@@ -36,9 +41,9 @@
               "children": [{
                   "id": "group",
                   "type": "Group",
-                  "heading": "Boforhold",
+                  "heading": "Hva slags bolig har du?",
                   "property": "living.type.group",
-                  "text": "Din bosituasjon kan være avgjørende for hvilken katt du burde ha.",
+                  "text": "Boligen du har kan bestemme om du får lov til å ha katt.",
                   "children": [{
                       "property": "living.type",
                       "type": "Radio",
@@ -62,11 +67,6 @@
                           "type": "Answer",
                           "text": "Enebolig",
                           "value": "enebolig"
-                        },
-                        {
-                          "type": "Answer",
-                          "text": "Annet (men skal være input)",
-                          "value": "annet"
                         }
                       ]
                     },
@@ -252,26 +252,21 @@
                 {
                   "property": "preferences.color",
                   "type": "Radio",
-                  "heading": "Hva er yndlingsfargen din?",
-                  "disabled": {
-                    "field": "living.gone",
-                    "operator": "lt",
-                    "value": 4
-                  },
+                  "heading": "Hvor er du mesteparten av denne tiden?",
                   "options": [{
                       "type": "Answer",
-                      "text": "Brun",
-                      "value": "brun"
+                      "text": "I barnehagen",
+                      "value": "barnehagen"
                     },
                     {
                       "type": "Answer",
-                      "text": "Svart",
-                      "value": "svart"
+                      "text": "På skolen",
+                      "value": "skolen"
                     },
                     {
                       "type": "Answer",
-                      "text": "Hvit",
-                      "value": "hvit"
+                      "text": "Hos venner",
+                      "value": "venner"
                     }
                   ]
                 }
@@ -286,7 +281,8 @@
               "children": [{
                 "id": "nocat",
                 "type": "Result",
-                "heading": "Du kan ikke ha katt 😿"
+                "heading": "Du kan ikke ha katt 😿",
+                "lead": "Du liker jo ikke katter engang! DISKVALIFISERT!"
               }]
             }
           ]
@@ -296,8 +292,8 @@
     {
       "id": "features",
       "type": "Page",
-      "heading": "Kattens egenskaper",
-      "lead": "Spørsmålene på denne siden er kanskje vanskelige å svare på hvis du ikke har vært så mye sammen med katter før. Det skjønner vi. Men katter er like forskjellige som deg og meg! Prøv å se for deg livet med en fin katt.",
+      "heading": "Hva slags katt passer for deg?",
+      "lead": "Spørsmålene på denne siden kan være vanskelige å svare på om du ikke har hatt katt før. Er du usikker på hvilken katt som passer for deg? Da kan du be biblioteket om hjelp til å finne de nyeste bøkene de har om katter. Du kan også få hjelp fra en fagperson innen området, slik som en dyrlege eller en dyrepleier med sentral godkjenning innen kattekos.",
       "children": [{
           "type": "Group",
           "heading": "Katt og kos",
@@ -325,6 +321,11 @@
               "property": "cuddle.fur",
               "type": "Radio",
               "heading": "Hva slags pels liker du å kose med?",
+              "disabled": {
+                "field": "cuddle.hours",
+                "operator": "gt",
+                "value": 4
+              },
               "options": [{
                   "type": "Answer",
                   "text": "Langhåret",
@@ -342,21 +343,11 @@
         {
           "property": "preferences.predator",
           "type": "Checkbox",
-          "heading": "Trenger du en katt som kan fange ekle dyr i huset ditt?",
+          "heading": "Kryss av for hvilke ekle insekter som finnes i boligen din",
           "options": [{
               "type": "Answer",
-              "text": "Edderkopp",
-              "value": "edderkopp"
-            },
-            {
-              "type": "Answer",
-              "text": "Mus",
-              "value": "mus",
-              "disabled": {
-                "field": "preferences.predator.edderkopp",
-                "operator": "neq",
-                "value": true
-              }
+              "text": "Edderkoppspisende mus",
+              "value": "mus"
             },
             {
               "type": "Answer",
@@ -367,7 +358,17 @@
               "type": "Answer",
               "text": "Rotter",
               "value": "rotter"
-            }
+            },
+            {
+              "type": "Answer",
+              "text": "Edderkopp",
+              "value": "edderkopp",
+              "disabled": {
+                "field": "preferences.predator.mus",
+                "operator": "neq",
+                "value": true
+              }
+            }  
           ]
         }
       ]
@@ -376,15 +377,14 @@
       "id": "optimalcat",
       "type": "Page",
       "heading": "Din optimale katt",
-      "lead": "Katter finnes i mange forskjellige farger, størrelser og sinnelag. Her kan du beskrive din optimale katt i størst mulig detalj. Vi skjønner at du er ivrig, men helst ikke skriv så mye at vi ikke gidder å lese det.",
+      "lead": "Katter finnes i mange forskjellige farger, størrelser og sinnelag. For at vi skal finne den katter som passer best for deg, er det derfor viktig at du beskriver din ideelle katt så detaljert som mulig.",
       "children": [{
           "property": "optimal.cat",
           "type": "Textarea",
           "heading": "Beskriv din optimale katt",
-          "text": "Eksempel: En katt som liker å kose, men ikke for mye.",
           "information": "Husk at det du beskriver her vil bli avgjørende for hvilken katt du får.",
           "summary": "Se eksempler",
-          "details": "<h3>Grunnarbeider</h3><p>Graving og sprengning av byggegrop, kulting og komprimering, legging av radonsperre, samt graving og gjenfylling av grøfter.</p><h3>Plassering</h3><p>Utstikking av høyde og plan før graving. Kvalitetssikre plassering av såle og grunnmur.</p><h3>Arkitektur</h3><p>Prosjektering av situasjonsplan, visuell utforming og terrengtilpasning, innvendig planløsning.</p>"
+          "details": "<h4>Katt som er flink med grunnarbeider</h4><p>Jeg vil ha en katt som er flink med graving og sprengning av byggegrop, kulting og komprimering, legging av radonsperre, samt graving og gjenfylling av grøfter.</p><h4>Katt som er flink med plassering</h4><p>Jeg vil ha en katt som er flink med utstikking av høyde og plan før graving. Kvalitetssikre plassering av såle og grunnmur.</p><h4>Katt som er flink med arkitektur</h4><p>Jeg vil ha en katt som er flink med prosjektering av situasjonsplan, visuell utforming og terrengtilpasning, innvendig planløsning.</p>"
         },
         {
           "property": "cat.image",
@@ -453,7 +453,7 @@
           "property": "orgnr",
           "type": "FetchOrg",
           "heading": "Organisasjonsnummer",
-          "text": "Eksempel: 123 456 789",
+          "text": "Informasjon om firmaet hentes automatisk fra Brønnøysundregisteret.",
           "placeholder": "987 654 321",
           "source":
             "https://data.brreg.no/enhetsregisteret/enhet.json?page=0&size=30&$filter=organisasjonsnummer+eq+",
@@ -461,8 +461,6 @@
             "Er firmaets navn eller adresse feil? Da må du endre denne informasjonen via skjemaet <a href=\"https://www.altinn.no/no/Starte-og-drive-bedrift/Drive/Andre-driftsoppgaver/Flytting-og-omorganisering/Hvordan-meldes-flytting-og-andre-endringer/\">Samordnet registermelding</a> i Altinn før du fortsetter.",
           "fetchSG": true,
           "SGheading": "${name} er registrert med sentral godkjenning for følgende områder",
-          "SGtext":
-            "Godkjenningen er til ${status.approval_period_to} og viser hvilke fagområder firmaet har kompetanse på. Du kan likevel erklære ansvar for ansvarsområder som ligger utenfor den sentrale godkjenningen hvis firmaet ditt har nødvendig kunnskap og erfaring fra også det området.",
           "invalidapproval": "Vi fant ikke godkjenningen din i systemet vårt",
           "SGsource": "https://sgregister.dibk.no/api/enterprises/"
         },
