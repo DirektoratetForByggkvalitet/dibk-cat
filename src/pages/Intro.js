@@ -30,7 +30,9 @@ export default function Intro({ close }) {
         <Primitives.Paragraphs.P>
           Er det noen spørsmål du er usikker på underveis? Du kan ta en pause og fortsette senere. Nettleseren husker hvor du var. 
         </Primitives.Paragraphs.P>
-        <Primitives.Button.MainButton onClick={() => close()}>Start veiviseren</Primitives.Button.MainButton>
+        <Primitives.Button.MainButton onClick={() => close()}>
+          Start veiviseren
+        </Primitives.Button.MainButton>
       </IntroMain>
     </Primitives.Wizard>
   );

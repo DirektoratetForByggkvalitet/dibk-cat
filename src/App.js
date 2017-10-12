@@ -12,13 +12,13 @@ import dataExport from './exports/data-export';
 export default class App extends Component {
   static propTypes = {
     translations: PropTypes.object,
-  }
+  };
 
   static defaultProps = {
     translations: {},
-  }
+  };
 
-  state = { intro: false }
+  state = { intro: true };
 
   closeIntro = () => this.setState({ intro: false });
 
@@ -33,11 +33,7 @@ export default class App extends Component {
 
     return (
       <Provider store={store}>
-        <Wizard
-          wizard={cat}
-          translations={this.props.translations}
-          exports={{ dataExport }}
-        />
+        <Wizard wizard={cat} translations={this.props.translations} exports={{ dataExport }} />
       </Provider>
     );
   }
