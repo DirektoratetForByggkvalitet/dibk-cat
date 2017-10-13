@@ -7,7 +7,7 @@ export default function Intro({ close }) {
   return (
     <Primitives.Wizard>
       <IntroMain>
-        <Primitives.Heading.H1>Har du lyst til å skaffe deg katt?</Primitives.Heading.H1>
+        <Primitives.Heading.H1>Anders Har du lyst til å skaffe deg katt?</Primitives.Heading.H1>
         <Primitives.Paragraphs.P>
           Svar på spørsmålene i denne veiviseren for å finne ut om du har lov til å ha katt der du
           bor, hva slags katt som passer deg, og om du har tid nok til å passe på en katt.
