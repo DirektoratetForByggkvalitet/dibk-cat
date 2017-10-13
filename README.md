@@ -1,7 +1,7 @@
 # [dibk-cat](https://dibk-cat.firebaseapp.com/) [![Build Status](https://travis-ci.com/netliferesearch/dibk-cat.svg?token=7NpjNJdFW93Qs1rPvcce&branch=master)](https://travis-ci.com/netliferesearch/dibk-cat)
 
-The dibk-cat project is a demo wizard that uses [losen](https://github.com/netliferesearch/losen).  
-The documentation for losen can be found here https://dibk-storybook.firebaseapp.com/.  
+The dibk-cat project is a demo wizard that uses [Losen](https://github.com/netliferesearch/losen).  
+The documentation for Losen can be found here https://dibk-storybook.firebaseapp.com/.  
 
 We made an Invision prototype that can be found here https://projects.invisionapp.com/share/EGCVNJU9T
 
