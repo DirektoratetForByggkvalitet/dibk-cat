@@ -8,8 +8,10 @@
       "id": "relation",
       "type": "Page",
       "heading": "Får du lov til å skaffe deg katt?",
-      "lead": "Før vi kan finne en katt som passer deg, må vi finne ut om du får lov til å ha katt i det hele tatt. Er du usikker på å hva å svare? Spør en voksen om hjelp.",
-      "children": [{
+      "lead":
+        "Før vi kan finne en katt som passer deg, må vi finne ut om du får lov til å ha katt i det hele tatt. Er du usikker på å hva å svare? Spør en voksen om hjelp.",
+      "children": [
+        {
           "id": "preferencesLove",
           "property": "preferences.love",
           "type": "Radio",
@@ -52,7 +54,8 @@
                   "heading": "Hva slags bolig har du?",
                   "property": "living.type.group",
                   "text": "Boligen du har kan bestemme om du får lov til å ha katt.",
-                  "children": [{
+                  "children": [
+                    {
                       "id": "livingType",
                       "property": "living.type",
                       "type": "Radio",
@@ -118,61 +121,61 @@
                         {
                           "id": "livingFloor.1",
                           "type": "Answer",
-                          "text": "1",
+                          "heading": "1",
                           "value": "1"
                         },
                         {
                           "id": "livingFloor.2",
                           "type": "Answer",
-                          "text": "2",
+                          "heading": "2",
                           "value": "2"
                         },
                         {
                           "id": "livingFloor.3",
                           "type": "Answer",
-                          "text": "3",
+                          "heading": "3",
                           "value": "3"
                         },
                         {
                           "id": "livingFloor.4",
                           "type": "Answer",
-                          "text": "4",
+                          "heading": "4",
                           "value": "4"
                         },
                         {
                           "id": "livingFloor.5",
                           "type": "Answer",
-                          "text": "5",
+                          "heading": "5",
                           "value": "5"
                         },
                         {
                           "id": "livingFloor.6",
                           "type": "Answer",
-                          "text": "6",
+                          "heading": "6",
                           "value": "6"
                         },
                         {
                           "id": "livingFloor.7",
                           "type": "Answer",
-                          "text": "7",
+                          "heading": "7",
                           "value": "7"
                         },
                         {
                           "id": "livingFloor.8",
                           "type": "Answer",
-                          "text": "8",
+                          "heading": "8",
                           "value": "8"
                         },
                         {
                           "id": "livingFloor.9",
                           "type": "Answer",
-                          "text": "9",
+                          "heading": "9",
                           "value": "9"
                         },
                         {
                           "id": "livingFloor.10",
                           "type": "Answer",
-                          "text": "10",
+                          "heading": "10",
                           "value": "10"
                         }
                       ]
@@ -266,7 +269,8 @@
                   "property": "living.gonewhere",
                   "type": "Radio",
                   "heading": "Hvor er du mesteparten av denne tiden?",
-                  "options": [{
+                  "options": [
+                    {
                       "id": "livingGonewhere.barnehagen",
                       "type": "Answer",
                       "text": "I barnehagen",
@@ -316,12 +320,14 @@
                 "operator": "neq",
                 "value": "ja"
               },
-              "children": [{
-                "id": "nocat",
-                "type": "Result",
-                "heading": "Du kan ikke ha katt 😿",
-                "lead": "Du liker jo ikke katter engang! DISKVALIFISERT!"
-              }]
+              "children": [
+                {
+                  "id": "nocat",
+                  "type": "Result",
+                  "heading": "Du kan ikke ha katt 😿",
+                  "lead": "Du liker jo ikke katter engang! DISKVALIFISERT!"
+                }
+              ]
             }
           ]
         }
@@ -380,8 +386,10 @@
       "id": "features",
       "type": "Page",
       "heading": "Hva slags katt passer for deg?",
-      "lead": "Spørsmålene på denne siden kan være vanskelige å svare på om du ikke har hatt katt før. Er du usikker på hvilken katt som passer for deg? Da kan du be biblioteket om hjelp til å finne de nyeste bøkene de har om katter. Du kan også få hjelp fra en fagperson innen området, slik som en dyrlege eller en dyrepleier med sentral godkjenning innen kattekos.",
-      "children": [{
+      "lead":
+        "Spørsmålene på denne siden kan være vanskelige å svare på om du ikke har hatt katt før. Er du usikker på hvilken katt som passer for deg? Da kan du be biblioteket om hjelp til å finne de nyeste bøkene de har om katter. Du kan også få hjelp fra en fagperson innen området, slik som en dyrlege eller en dyrepleier med sentral godkjenning innen kattekos.",
+      "children": [
+        {
           "type": "Group",
           "heading": "Katt og kos",
           "text":
@@ -418,7 +426,8 @@
                 "operator": "gt",
                 "value": 4
               },
-              "options": [{
+              "options": [
+                {
                   "id": "cuddleFur.langharet",
                   "type": "Answer",
                   "text": "Langhåret",
@@ -438,7 +447,8 @@
           "property": "preferences.predator",
           "type": "Checkbox",
           "heading": "Kryss av for hvilke ekle insekter som finnes i boligen din",
-          "options": [{
+          "options": [
+            {
               "type": "Answer",
               "text": "Edderkoppspisende mus",
               "value": "mus"
@@ -462,7 +472,7 @@
                 "operator": "neq",
                 "value": true
               }
-            }  
+            }
           ]
         }
       ]
@@ -471,14 +481,17 @@
       "id": "optimalcat",
       "type": "Page",
       "heading": "Din optimale katt",
-      "lead": "Katter finnes i mange forskjellige farger, størrelser og sinnelag. For at vi skal finne den katter som passer best for deg, er det derfor viktig at du beskriver din ideelle katt så detaljert som mulig.",
-      "children": [{
+      "lead":
+        "Katter finnes i mange forskjellige farger, størrelser og sinnelag. For at vi skal finne den katter som passer best for deg, er det derfor viktig at du beskriver din ideelle katt så detaljert som mulig.",
+      "children": [
+        {
           "property": "optimal.cat",
           "type": "Textarea",
           "heading": "Beskriv din optimale katt",
           "information": "Husk at det du beskriver her vil bli avgjørende for hvilken katt du får.",
           "summary": "Se eksempler",
-          "details": "<h4>Katt som er flink med grunnarbeider</h4><p>Jeg vil ha en katt som er flink med graving og sprengning av byggegrop, kulting og komprimering, legging av radonsperre, samt graving og gjenfylling av grøfter.</p><h4>Katt som er flink med plassering</h4><p>Jeg vil ha en katt som er flink med utstikking av høyde og plan før graving. Kvalitetssikre plassering av såle og grunnmur.</p><h4>Katt som er flink med arkitektur</h4><p>Jeg vil ha en katt som er flink med prosjektering av situasjonsplan, visuell utforming og terrengtilpasning, innvendig planløsning.</p>"
+          "details":
+            "<h4>Katt som er flink med grunnarbeider</h4><p>Jeg vil ha en katt som er flink med graving og sprengning av byggegrop, kulting og komprimering, legging av radonsperre, samt graving og gjenfylling av grøfter.</p><h4>Katt som er flink med plassering</h4><p>Jeg vil ha en katt som er flink med utstikking av høyde og plan før graving. Kvalitetssikre plassering av såle og grunnmur.</p><h4>Katt som er flink med arkitektur</h4><p>Jeg vil ha en katt som er flink med prosjektering av situasjonsplan, visuell utforming og terrengtilpasning, innvendig planløsning.</p>"
         },
         {
           "id": "catImage",
