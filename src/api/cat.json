@@ -435,25 +435,30 @@
           ]
         },
         {
+          "id": "preferencesPredator",
           "property": "preferences.predator",
           "type": "Checkbox",
           "heading": "Kryss av for hvilke ekle insekter som finnes i boligen din",
           "options": [{
+              "id": "preferencesPredator.mus",
               "type": "Answer",
               "text": "Edderkoppspisende mus",
               "value": "mus"
             },
             {
+              "id": "preferencesPredator.fluer",
               "type": "Answer",
               "text": "Fluer",
               "value": "fluer"
             },
             {
+              "id": "preferencesPredator.rotter",
               "type": "Answer",
               "text": "Rotter",
               "value": "rotter"
             },
             {
+              "id": "preferencesPredator.edderkopp",
               "type": "Answer",
               "text": "Edderkopp",
               "value": "edderkopp",
