@@ -322,6 +322,26 @@
               },
               "children": [
                 {
+                  "type": "Branch",
+                  "branches": [
+                    {
+                      "test": {
+                        "field": "preferences.love",
+                        "operator": "eq",
+                        "value": "nei"
+                      },
+                      "children": [
+                        {
+                          "id": "insufficientCompentency",
+                          "type": "Text",
+                          "warning": true,
+                          "heading": "Du kan ikke ha en katt fordi du ikke liker de."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
                   "id": "nocat",
                   "type": "Result",
                   "heading": "Du kan ikke ha katt 😿",
@@ -448,7 +468,8 @@
           "property": "preferences.predator",
           "type": "Checkbox",
           "heading": "Kryss av for hvilke ekle insekter som finnes i boligen din",
-          "options": [{
+          "options": [
+            {
               "id": "preferencesPredator.mus",
               "type": "Answer",
               "text": "Edderkoppspisende mus",
