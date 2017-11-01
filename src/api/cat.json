@@ -244,40 +244,6 @@
                           "value": "nei"
                         }
                       ]
-                    },
-                    {
-                      "id": "livingAnimals",
-                      "property": "living.animals",
-                      "type": "Radio",
-                      "heading": "Har du lov til å ha katt?",
-                      "hidden": {
-                        "type": "or",
-                        "clauses": [
-                          {
-                            "field": "living.contract",
-                            "operator": "not"
-                          },
-                          {
-                            "field": "living.contract",
-                            "operator": "eq",
-                            "value": "nei"
-                          }
-                        ]
-                      },
-                      "options": [
-                        {
-                          "id": "livingAnimals.ja",
-                          "type": "Answer",
-                          "text": "Ja",
-                          "value": "ja"
-                        },
-                        {
-                          "id": "livingAnimals.nei",
-                          "type": "Answer",
-                          "text": "Nei",
-                          "value": "nei"
-                        }
-                      ]
                     }
                   ]
                 },
