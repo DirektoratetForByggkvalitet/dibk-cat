@@ -29,12 +29,6 @@
               "type": "Answer",
               "text": "Nei",
               "value": "nei"
-            },
-            {
-              "id": "preferencesLove.vetikke",
-              "type": "Answer",
-              "text": "Vet ikke",
-              "value": "vetikke"
             }
           ]
         },
@@ -56,13 +50,13 @@
                       "id": "insufficientCompentency",
                       "type": "Text",
                       "warning": true,
-                      "heading": "Du kan ikke ha en katt fordi du ikke liker de."
+                      "heading": "Du kan ikke ha katt!"
                     },
                     {
                       "id": "insufficientdesc",
                       "type": "Text",
                       "text":
-                        "Liker man ikke katter så er det ikke lurt å få seg katt. Les mer i Katteloven."
+                        "<p>Liker man ikke katter er det jo helt dust å få seg katt. Det er dessuten forbudt. <a href=\"https://lovdata.no/dokument/NL/lov/1999-03-26-14\">Les mer i Katteloven.</a></p>"
                     }
                   ]
                 }
@@ -328,7 +322,7 @@
                   "type": "Radio",
                   "heading": "Skal katten din være en utekatt eller en innekatt?",
                   "text":
-                    "En innekatt og en utekatt lever veldig forskjellige liv. Innekatten har et begrenset territorium og lever i et beskyttet miljø, mens utekatten kan gå fritt over et mye større område og utsettes for farer av forskjellige slag. Utekatten blir også mer påvirket av vekslingene mellom årstidene. Forskjellene mellom innekattens og utekattens livsstil gjør at de har ulike næringsbehov.",
+                    "En innekatt og en utekatt lever veldig forskjellige liv. Forskjellene mellom innekattens og utekattens livsstil gjør at de har ulike næringsbehov.",
                   "options": [
                     {
                       "id": "outdoor.outside",
@@ -378,13 +372,13 @@
             {
               "id": "outsidecat",
               "type": "Page",
-              "heading": "Utekatt",
-              "lead": "Utekatt",
+              "heading": "Utekattens miljø",
+              "lead": "Utekatten kan gå fritt over et stort område og utsettes for farer av forskjellige slag. De er utsatt for vær og vind, og må passe seg for trafikk og slemme naboer.",
               "children": [
                 {
                   "property": "address.outside",
                   "type": "Input",
-                  "heading": "Hvor bor dere?"
+                  "heading": "Beskriv uteområdet der du bor med tre ord"
                 }
               ]
             }
@@ -400,13 +394,13 @@
             {
               "id": "insidecat",
               "type": "Page",
-              "heading": "Innekatt",
-              "lead": "Innekatt",
+              "heading": "Innekattens miljø",
+              "lead": "Innekatten har et begrenset territorium og lever i et beskyttet miljø. Den trenger varierte omgivelser i hjemmet for å få utløp for sin kattenatur.",
               "children": [
                 {
                   "property": "someinput",
                   "type": "Input",
-                  "heading": "Har dere trapper?"
+                  "heading": "Beskriv inneområdet der du bor med tre ord"
                 }
               ]
             }
@@ -436,7 +430,7 @@
               "maximum": 24,
               "step": 1,
               "text":
-                "Husk å beregne tid til å spise og sove for både deg og katten! <a href=\"/somewhere\">Les mer om mat</a>"
+                "Husk å beregne tid til å spise og sove for både deg og katten! <a href=\"https://no.wikipedia.org/wiki/Kattemat\">Les mer om mat</a>"
             },
             {
               "property": "cuddle.image",
@@ -607,8 +601,8 @@
     {
       "id": "testtypes",
       "type": "Page",
-      "heading": "Informasjon om firmaet",
-      "lead": "En samling av noen spesielle komponenter.",
+      "heading": "Informasjon om firmaet ditt",
+      "lead": "Visste du at personer med et suksessfullt firma har mer tilfredse katter? Neida, denne siden er egentlig bare en samling av noen spesielle komponenter for å demonstrere tilgjengelig funksjonalitet i veiviseren.",
       "children": [
         {
           "property": "orgnr",
