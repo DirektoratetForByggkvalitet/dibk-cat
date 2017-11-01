@@ -608,8 +608,7 @@
           "property": "orgnr",
           "type": "FetchOrg",
           "heading": "Organisasjonsnummer",
-          "text": "Informasjon om firmaet hentes automatisk fra Brønnøysundregisteret.",
-          "placeholder": "987 654 321",
+          "text": "<p>Eksempel 974 760 223 eller 974760223</p>",
           "source":
             "https://data.brreg.no/enhetsregisteret/enhet.json?page=0&size=30&$filter=organisasjonsnummer+eq+",
           "information":
