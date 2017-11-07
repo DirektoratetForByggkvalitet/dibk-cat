@@ -30,3 +30,14 @@ Follow the instructions for:
 
 To build the production bundle you run `yarn run build`.
 Then you are ready to type `yarn deploy` :sparkles:
+
+## Deploy to production
+
+First build this project `npm run build` (make sure you are using latest version of [losen](https://github.com/netliferesearch/losen)).  
+Then navigate to the wizard page in [DIBK staging](http://azr-dibkstaging.azurewebsites.net/). You will find the page in the icon top left and `Forside/Tests/Katteveiviser`
+Select folder icon (folder top right) then press "Media" (between "Blokker" and "Skjemaer").
+Scroll all the way to the bottom and chose "For denne Side".
+Upload the Javascript bundle found in `build/static` after the build step.
+Then press the menu icon (last icon row right) and update the file in "Javascriptfil for veiviseren" to the file you just uploaded.
+The last step is to publish the page.
+The pictures and text changes are uploaded to Episerver.
