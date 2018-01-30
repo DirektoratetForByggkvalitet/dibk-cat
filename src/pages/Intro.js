@@ -26,7 +26,7 @@ export default function Intro({ close }) {
           </div>
           <Primitives.Figure>
             <img
-              src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/18447415_10155393402102558_3004629122651437765_n.jpg?oh=25762607ce16dceda32d1a69df61bde3&oe=5A47FED5"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTblL45kPaUq19Oko9BMKaEcVJ1DTUwvFYsVD2Qavxb2tVerKzW"
               alt="katter er fine"
             />
             <figcaption>På forsiden kan du ha et bilde med bildetekst</figcaption>
