@@ -3,6 +3,51 @@
     "title": "Burde du skaffe deg katt?",
     "footer": "Your footer here!"
   },
+  "computed": {
+    "contractIsRelevant": {
+      "type": "and",
+      "clauses": [
+        {
+          "field": "living.type",
+          "operator": "is"
+        },
+        {
+          "field": "living.type",
+          "operator": "neq",
+          "value": "enebolig"
+        },
+        {
+          "field": "living.type",
+          "operator": "neq",
+          "value": "annet"
+        }
+      ]
+    },
+    "floorChoiceHidden": {
+      "type": "or",
+      "clauses": [
+        {
+          "field": "living.type",
+          "operator": "not"
+        },
+        {
+          "field": "living.type",
+          "operator": "eq",
+          "value": "enebolig"
+        },
+        {
+          "field": "living.type",
+          "operator": "eq",
+          "value": "rekkehus"
+        },
+        {
+          "field": "living.type",
+          "operator": "eq",
+          "value": "annet"
+        }
+      ]
+    }
+  },
   "schema": [
     {
       "id": "relation",
@@ -120,28 +165,8 @@
                       "heading": "I hvilken etasje bor du?",
                       "text": "Hvis du bor veldig høyt oppe kan katten falle ned og dø.",
                       "hidden": {
-                        "type": "or",
-                        "clauses": [
-                          {
-                            "field": "living.type",
-                            "operator": "not"
-                          },
-                          {
-                            "field": "living.type",
-                            "operator": "eq",
-                            "value": "enebolig"
-                          },
-                          {
-                            "field": "living.type",
-                            "operator": "eq",
-                            "value": "rekkehus"
-                          },
-                          {
-                            "field": "living.type",
-                            "operator": "eq",
-                            "value": "annet"
-                          }
-                        ]
+                        "field": "$computed.floorChoiceHidden",
+                        "operator": "is"
                       },
                       "options": [
                         {
@@ -212,23 +237,8 @@
                       "type": "Radio",
                       "heading": "Er dyrehold regulert av kontrakten din?",
                       "hidden": {
-                        "type": "or",
-                        "clauses": [
-                          {
-                            "field": "living.type",
-                            "operator": "not"
-                          },
-                          {
-                            "field": "living.type",
-                            "operator": "eq",
-                            "value": "enebolig"
-                          },
-                          {
-                            "field": "living.type",
-                            "operator": "eq",
-                            "value": "annet"
-                          }
-                        ]
+                        "operator": "not",
+                        "field": "$computed.contractIsRelevant"
                       },
                       "options": [
                         {
